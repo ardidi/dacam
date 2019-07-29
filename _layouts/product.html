@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="zh"> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body class="header-fixed boxed-layout container">
+	  <div class="wrapper">
+	  	  {% include header.html %}
+		
+			<!--=== Breadcrumbs v3 ===-->
+			<!--div class="breadcrumbs-v3" style="background: url({{page.imageBig}}) no-repeat; background-size: cover; background-position: center center;">
+			    <div class="container text-center">
+			        <h1></h1>
+			    </div>
+			</div-->
+			<!--=== End Breadcrumbs v3 ===-->
+			
+
+		    <div class="container content margin-bottom-20">
+		    </div>
+		    <!--=== Breadcrumbs ===-->
+		    <div class="breadcrumbs" class="background-color:">
+		        <div class="container">
+		            <ul class="pull-left breadcrumb">
+		                <li><a href="/">首頁</a></li>
+		                <li><a href="category.html">使用國家一覽</a></li>
+		                <li><a href="category.html">{{page.categories}}</a></li>
+		                <li class="active"><a href="{{page.permalink}}">{{page.machinename}}</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		    <!--=== End Breadcrumbs ===-->
+		    
+		    
+		    <!--=== Content Part ===-->
+		    <div class="container content">
+		    	<div class="row portfolio-item margin-bottom-50"> 
+		    		<div class="col-md-2">
+		    			<div class="panel panel-dark-blue margin-bottom-40">
+							<div class="panel-heading">
+								<h3 class="panel-title">機種清單</h3>
+							</div>
+							
+							<ul class="list-group sidebar-nav-v1" id="sidebar-nav">
+			   				{% for category in site.categories %}
+				                <li class="list-group-item list-toggle">                   
+				                    <a data-toggle="collapse" data-parent="#sidebar-nav" href="#{{ category | first }}">{{ category | first }} ({{ category | last | size }})</a>
+				                    <ul id="{{ category | first }}" class="collapse">
+									    {% for posts in category %}
+									      {% for post in posts %}
+									      	{% if post.title=="" %}
+									        	<li><a href="{{ post.url }}">{{ post.nickname }}</a></li>
+								            {% endif %}
+									      {% endfor %}
+									    {% endfor %}
+				                    </ul>
+				                </li>
+				            {% endfor %}
+							</ul>
+		    			</div>
+
+		    		</div>
+		            <!-- Content Info -->
+		            <div class="col-md-10 md-margin-bottom-40">
+						<div class="row">
+				        	<div class="col-sm-12 margin-bottom-40">
+			                    <div class="blog-img">
+			                        <img class="img-responsive" src="{{ page.imageBig }}">
+			                    </div>
+				        	</div>
+						</div>
+						<div class="row">
+			            	<div class="col-md-8">
+			                    <div style="text-align: center; padding: 5px 0; text-shadow: 0 1px 0 #fff; line-height: normal; font-weight: bold; margin: 0;">
+			                        <img src="{{ page.imageMachine }}" style="max-width: 100%; height: auto;" />
+			                    </div>
+								<div class="headline"><h2>設備介紹</h2></div>
+		                        <div class="table-responsive">
+		                            <table class="table table-hover table-bordedark-blue table-striped">
+		                                <tbody>
+		                                    <tr>
+		                                        <td style="width:180px;">
+		                                            待機時間
+		                                        </td>
+		                                        <td>{{ page.useCountry }}</td>
+		                                    </tr>
+		                                    <tr>
+		                                        <td style="width:180px;">
+		                                            連線台數
+		                                        </td>
+		                                        <td>{{ page.useCountry }}</td>
+		                                    </tr>
+		                                    <tr>
+		                                        <td style="width:180px;">
+		                                            使用範圍
+		                                        </td>
+		                                        <td>{{ page.useCountry }}</td>
+		                                    </tr>
+		                                    <tr>
+		                                        <td style="width:180px;">
+		                                            充電規格
+		                                        </td>
+		                                        <td>MicroUSB</td>
+		                                    </tr>
+		                                    <tr>
+		                                        <td>
+		                                            流量限制
+		                                        </td>
+		                                        <td>{{ page.datalimit }}</td>
+		                                    </tr>
+		                                    <tr>
+		                                        <td colspan="2" style="text-align:center; font-weight:bold;">
+		                                            其餘說明
+		                                        </td>
+		                                    </tr>
+		                                    <tr>
+		                                        <td colspan="2" style="text-align:center;">
+		                                            {{ page.datalimitExplain }}
+		                                        </td>
+		                                    </tr>
+		                                </tbody>
+		                            </table>
+		                        </div>
+			            	</div>
+			            	<div class="col-md-4">
+			            		<div class="panel panel-dark-blue">
+									<div class="panel-heading">
+										<h3 class="panel-title">租金</h3>
+									</div>
+														
+					                    <div style="text-align: center; padding: 5px 0; text-shadow: 0 1px 0 #fff; line-height: normal; font-weight: bold; margin: 0;">
+					                        <h4 class="price" style="color:#000000; font-size: 70px;  padding: 15px 0; ">
+					                            <i></i>{{ page.price }}<i style="font-size: 30px;">元/日</i>
+					                        </h4>
+					                        <a href="https://wi-go.com.tw/rent/booking-days.php?serviceID={{page.serviceId}}"><img src="/images/btn-reserve.png" /></a>
+					                    </div>
+					                
+				    			</div>
+
+			            	</div>
+						</div>
+		            	
+						<div class="row">
+				        	<div class="col-sm-12 margin-bottom-40">
+			                    <div class="panel panel-dark-blue">
+									<div class="panel-heading">
+										<h3 class="panel-title">機種特點</h3>
+									</div>
+									<table style="width:100%">
+										{% for slogan in page.slogan %}
+											<tr style="padding-top:10px;">
+												<th style="width:180px; font-size:30px; color:#ff0000; padding-left:10px;">{{ slogan.title }}</th>
+												<td style="font-size:16px;">{{ slogan.comment }}</td>
+											</tr>
+										{% endfor %}
+									</table>
+			                    </div>
+				        	</div>
+						</div>
+						<div class="row">
+				        	<div class="col-sm-12 margin-bottom-40">
+			                    <div class="panel panel-dark-blue">
+									<div class="panel-heading">
+										<h3 class="panel-title">說明</h3>
+									</div>
+				                    <ul class="list-unstyled" style="padding-left:10px;">
+										{% for reference in page.references %}
+										  <li style="font-size:16px;" style="padding-top:10px;">{{ reference.text }}</li>
+										{% endfor %}
+				                    </ul>
+			                    </div>
+				        	</div>
+						</div>
+						<div class="row">
+				        	<div class="col-sm-12 margin-bottom-40">
+			                    <div class="panel panel-dark-blue">
+									<div class="panel-heading">
+										<h3 class="panel-title">Fair Usage Policy 網路通信公平使用原則）</h3>
+									</div>
+				                    <ul class="list-unstyled" style="padding:10px 10px 10px 10px;">
+										為了維護網路連線品質及公平使用原則，世界各國的電信公司有時會針對短時間內使用極大網路流量的顧客進行流量管制，可能導致無法上網或上網速度變慢。
+建議不要觀看影音檔、網路電視、視訊、線上遊戲....等等，並關掉3C產品的自動更新功能與雲端硬碟傳送資料功能。
+萬一發生了此類限制情況，這段時間的使用費仍需由客戶自行負擔。
+				                    </ul>
+			                    </div>
+				        	</div>
+						</div>
+						
+	            	</div>
+		        </div><!--/row-->
+		    </div><!--/container-->		
+		    <!--=== End Content Part ===-->
+	  	  {% include footer.html %}
+	  </div>
+		{% include foot.html %}
+		
+	<script type="text/javascript">
+	        
+		jQuery(document).ready(function() {
+	        $('#startDate').datepicker({
+	            dateFormat: 'yy-mm-dd',
+	            prevText: '<i class="fa fa-angle-left"></i>',
+	            nextText: '<i class="fa fa-angle-right"></i>',
+	            onSelect: function( selectedDate )
+	            {
+		            var minDate = new Date();
+		            minDate.setDate(minDate.getDate() + 3);
+	                $('#finishDate').datepicker('option', 'minDate', minDate);
+	                checkDate();
+	            }
+	        });
+	        
+	        
+	        $('#finishDate').datepicker({
+	            dateFormat: 'yy-mm-dd',
+	            prevText: '<i class="fa fa-angle-left"></i>',
+	            nextText: '<i class="fa fa-angle-right"></i>',
+	            onSelect: function( selectedDate )
+	            {
+	                $('#startDate').datepicker('option', 'maxDate', selectedDate);
+	                checkDate();
+	            }
+	        });
+	        
+	        
+			var minDate = new Date();
+			minDate.setDate(minDate.getDate() + 4);
+			
+	        $('#startDate').datepicker('option', 'minDate', minDate);
+	        $('#finishDate').datepicker('option', 'minDate', minDate);
+	    });
+	    
+	    function checkDate(){
+		    var date_From = $('#startDate').val();
+			var date_To = $('#finishDate').val();
+			var serviceID = $('#serviceID').val();
+			if(date_To!=''){
+			    $.getJSON("//wi-go.com.tw/rent/ajax/checkDayAvailabilityNew.php?callback=?",{dateFrom:date_From,dateTo:date_To,serviceID:serviceID},function(data){
+			    	if(!data.responce==true){
+				    	$('#rentAmount').html("");
+						$("#message").html(data.message);
+			    	}else{
+				    	$('#rentAmount').html("租金："+data[0].totalPrice);
+						$("#message").html("");
+			    	}
+			    });
+			}
+//			alert(date_From);
+	    }
+	    
+	</script>
+  </body>
+
+</html>

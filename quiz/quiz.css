@@ -1,0 +1,3255 @@
+html {
+    height: 100%
+}
+
+.cancel.round {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -khtml-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #666;
+    text-align: center;
+    cursor: pointer
+}
+
+.cancel.round .fa {
+    font-size: 15px;
+    line-height: 18px;
+    color: #666
+}
+
+.game {
+    height: 100%
+}
+
+.game #bodyWrapper {
+    height: 100%
+}
+
+.game #contentWrapper {
+    height: 100%
+}
+
+.game #contentWrapper *,
+.game #contentWrapper *:before,
+.game #contentWrapper *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.game #contentWrapper #wrapper {
+    height: 100%
+}
+
+.game #contentWrapper #wrapper #content {
+    height: 100%
+}
+
+.game #contentWrapper #wrapper #content>.plainGrid {
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    -khtml-border-radius: 0px 0px 0px 0px;
+    -o-border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    margin: 0px;
+    width: 100%;
+    text-align: center
+}
+
+.game #contentWrapper #wrapper #content>.plainGrid .gridContent {
+    padding: 0px;
+    width: 100%
+}
+
+.game .plainGrid .gridContent .navToQuiz {
+    cursor: pointer
+}
+
+.game #section-curtain {
+    background: #212121;
+    background: -o-linear-gradient(#141414, #2e2e2e);
+    background: -webkit-linear-gradient(top, #141414 0%, #212121 20%, #2e2e2e 100%);
+    background: -moz-linear-gradient(center top, #141414 0%, #212121 20%, #2e2e2e 100%);
+    position: relative;
+    height: 40%;
+    z-index: 9999;
+    overflow: hidden
+}
+
+.game #section-curtain .gridContent .title {
+    font-size: 28px;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    z-index: 1
+}
+
+.game #section-curtain .gridContent .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 1
+}
+
+.game #section-curtain .gridContent .content .desc {
+    font-size: 17px;
+    line-height: 19px
+}
+
+.activity #header {
+    z-index: 9999
+}
+
+.activity #fixedHeader {
+    top: 0px
+}
+
+.activity #section-curtain {
+    background: #4DA1BF;
+    background: -o-linear-gradient(#4094b2, #60abc6);
+    background: -webkit-linear-gradient(top, #4094b2 0%, #4DA1BF 20%, #60abc6 100%);
+    background: -moz-linear-gradient(center top, #4094b2 0%, #4DA1BF 20%, #60abc6 100%);
+    height: 40%;
+    z-index: 9999
+}
+
+.activity #section-curtain .gridContent .title {
+    top: auto;
+    bottom: 360px
+}
+
+.activity #section-curtain .gridContent .content {
+    top: auto;
+    bottom: 320px;
+    padding-top: 0px;
+    margin-left: -200px;
+    width: 400px
+}
+
+.activity #section-curtain .gridContent .globe {
+    animation-name: spin;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 30s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 30s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: spin;
+    -o-transition: rotate(3600deg);
+    position: absolute;
+    left: 50%;
+    bottom: -500px;
+    margin-left: -400px;
+    width: 800px
+}
+
+.activity #section-curtain .gridContent .globe img {
+    width: 790px
+}
+
+.activity #section-nav {
+    position: relative;
+    z-index: 9999;
+    display: none
+}
+
+.activity #section-nav .gridContent .arrowDown {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 30px;
+    border-color: #60abc6 transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -30px
+}
+
+.activity #section-scrollDown {
+    background: #434343;
+    background: -o-linear-gradient(#363636, #434343);
+    background: -webkit-linear-gradient(top, #363636 0%, #434343 50%, #434343 100%);
+    background: -moz-linear-gradient(center top, #363636 0%, #434343 50%, #434343 100%);
+    position: fixed;
+    left: 0px;
+    bottom: -40px;
+    height: 20%;
+    cursor: pointer;
+    z-index: 9
+}
+
+.activity #section-scrollDown .text {
+    font-size: 20px;
+    line-height: 22px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -26px;
+    width: 200px;
+    color: #fff;
+    text-align: center
+}
+
+.activity #section-quizzes {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background: #f9f7f5;
+    z-index: 1
+}
+
+.activity #section-quizzes .gridContent {
+    margin-top: 0px;
+    height: 100%
+}
+
+.activity #section-quizzes .gridContent .quizzes {
+    position: relative;
+    margin: 6% auto 0px;
+    width: 960px;
+    height: 86%;
+    background: #fafafa;
+    border: 1px solid #eee;
+    text-align: center
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz {
+    display: none;
+    width: 100%;
+    height: 100%
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .tableGrid {
+    height: 100%
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .tableGrid tr {
+    height: 33%
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    vertical-align: middle;
+    width: 319px;
+    transition: opacity 1s ease-out
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid .text {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0px 10px;
+    width: 320px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer {
+    background: #fff;
+    cursor: pointer;
+    visibility: hidden
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer.style_1 {
+    background: #492d61;
+    color: #fff
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer.style_2 {
+    background: #33afa5;
+    color: #fff
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer.style_3 {
+    background: #207791;
+    color: #fff
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer.style_4 {
+    background: #d1f2b8
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer.style_5 {
+    background: #d95b43;
+    color: #fff
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer.style_6 {
+    background: #a71b4a;
+    color: #fff
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer.style_7 {
+    background: #fc9d9a;
+    color: #535353
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer.style_8 {
+    background: #fcebb6
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer:hover {
+    background: #434343
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer:hover.style_1 {
+    background: #563572
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer:hover.style_2 {
+    background: #39c3b8
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer:hover.style_3 {
+    background: #2588a6
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer:hover.style_4 {
+    background: #dff6ce
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer:hover.style_5 {
+    background: #dd6e58
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer:hover.style_6 {
+    background: #bd1f54
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer:hover.style_7 {
+    background: #fdb5b3
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer:hover.style_8 {
+    background: #fdf2ce
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.answer.active {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    visibility: visible
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.title {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    background: #fff;
+    cursor: default;
+    visibility: visible
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz .grid.title .text {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz.loading .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -150px;
+    width: 300px;
+    height: 60px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz.loading .content .text {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #535353
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz.loading .content .progressBar {
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px auto 0px;
+    width: 280px;
+    height: 16px;
+    padding: 4px;
+    background: #434343
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz.loading .content .progressBar .bar {
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    width: 0%;
+    height: 8px;
+    background: #44c2f6
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result {
+    background-size: cover
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content {
+    -moz-box-shadow: 0px 0px 300px rgba(0, 0, 0, 0.4) inset;
+    -webkit-box-shadow: 0px 0px 300px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0px 0px 300px rgba(0, 0, 0, 0.4) inset;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .caption {
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .result {
+    font-size: 60px;
+    line-height: 62px;
+    margin-top: 40px;
+    padding: 20px;
+    text-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7), 0px 0px 1px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: bold
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more {
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -khtml-border-radius: 2px 2px 2px 2px;
+    -o-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.4)
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .desc {
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .promo {
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .promo .stat {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    color: #fff
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .promo a.link {
+    color: #fff;
+    font-weight: bold
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .promo a.link .fa {
+    margin-left: 4px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .socialMedias {
+    margin-top: 20px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .socialMedias .replay {
+    vertical-align: top;
+    margin: 10px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .socialMedias .replay .fa {
+    margin-left: 4px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .socialMedias .fbShare {
+    margin: 10px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .socialMedias .fbShare a {
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -khtml-border-radius: 4px 4px 4px 4px;
+    -o-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .socialMedias .fbShare a .triangle {
+    margin-left: 116px;
+    margin-top: 7px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .socialMedias .fbShare a .text {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px 12px
+}
+
+.activity #section-quizzes .gridContent .quizzes .quiz#quiz_result .content .more .socialMedias .fbShare a .count {
+    -moz-border-radius: 0px 4px 4px 0px;
+    -webkit-border-radius: 0px 4px 4px 0px;
+    -khtml-border-radius: 0px 4px 4px 0px;
+    -o-border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 4px 4px 0px;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 7px;
+    height: 30px
+}
+
+.activity.fixed #section-quizzes {
+    position: fixed;
+    top: 0px;
+    height: 100%
+}
+
+@-moz-keyframes tk_0 {
+    from {
+        background-color: #33afa5
+    }
+    to {
+        background-color: #9ae1dc
+    }
+}
+
+@-webkit-keyframes tk_0 {
+    from {
+        background-color: #33afa5
+    }
+    to {
+        background-color: #9ae1dc
+    }
+}
+
+@keyframes tk_0 {
+    from {
+        background-color: #33afa5
+    }
+    to {
+        background-color: #9ae1dc
+    }
+}
+
+@-moz-keyframes tk_1 {
+    from {
+        background-color: #207791
+    }
+    to {
+        background-color: #6cc4de
+    }
+}
+
+@-webkit-keyframes tk_1 {
+    from {
+        background-color: #207791
+    }
+    to {
+        background-color: #6cc4de
+    }
+}
+
+@keyframes tk_1 {
+    from {
+        background-color: #207791
+    }
+    to {
+        background-color: #6cc4de
+    }
+}
+
+@-moz-keyframes tk_2 {
+    from {
+        background-color: #B9E398
+    }
+    to {
+        background-color: #fff
+    }
+}
+
+@-webkit-keyframes tk_2 {
+    from {
+        background-color: #B9E398
+    }
+    to {
+        background-color: #fff
+    }
+}
+
+@keyframes tk_2 {
+    from {
+        background-color: #B9E398
+    }
+    to {
+        background-color: #fff
+    }
+}
+
+@-moz-keyframes tk_3 {
+    from {
+        background-color: #d95b43
+    }
+    to {
+        background-color: #f3cac2
+    }
+}
+
+@-webkit-keyframes tk_3 {
+    from {
+        background-color: #d95b43
+    }
+    to {
+        background-color: #f3cac2
+    }
+}
+
+@keyframes tk_3 {
+    from {
+        background-color: #d95b43
+    }
+    to {
+        background-color: #f3cac2
+    }
+}
+
+@-moz-keyframes tk_4 {
+    from {
+        background-color: #a71b4a
+    }
+    to {
+        background-color: #e8739a
+    }
+}
+
+@-webkit-keyframes tk_4 {
+    from {
+        background-color: #a71b4a
+    }
+    to {
+        background-color: #e8739a
+    }
+}
+
+@keyframes tk_4 {
+    from {
+        background-color: #a71b4a
+    }
+    to {
+        background-color: #e8739a
+    }
+}
+
+@-moz-keyframes tk_5 {
+    from {
+        background-color: #FCE08B
+    }
+    to {
+        background-color: #fff
+    }
+}
+
+@-webkit-keyframes tk_5 {
+    from {
+        background-color: #FCE08B
+    }
+    to {
+        background-color: #fff
+    }
+}
+
+@keyframes tk_5 {
+    from {
+        background-color: #FCE08B
+    }
+    to {
+        background-color: #fff
+    }
+}
+
+@keyframes mask {
+    0%,
+    49% {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+        filter: alpha(opacity=0);
+        -moz-opacity: 0;
+        -khtml-opacity: 0;
+        opacity: 0
+    }
+    50%,
+    100% {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1
+    }
+}
+
+@-moz-keyframes mask {
+    0%,
+    49% {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+        filter: alpha(opacity=0);
+        -moz-opacity: 0;
+        -khtml-opacity: 0;
+        opacity: 0
+    }
+    50%,
+    100% {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes mask {
+    0%,
+    49% {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+        filter: alpha(opacity=0);
+        -moz-opacity: 0;
+        -khtml-opacity: 0;
+        opacity: 0
+    }
+    50%,
+    100% {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1
+    }
+}
+
+.qa #header {
+    display: none
+}
+
+.qa #contentWrapper {
+    margin: 44px auto 0px;
+    height: 100%;
+    max-width: 480px;
+    max-height: 680px
+}
+
+.qa #contentWrapper #wrapper {
+    width: 100%
+}
+
+.qa #contentWrapper #wrapper #content {
+    margin-top: -44px
+}
+
+.qa #contentWrapper #wrapper #content>.plainGrid {
+    padding: 44px 0px 0px;
+    height: 100%
+}
+
+.qa #contentWrapper #wrapper #content>.plainGrid .gridContent {
+    height: 100%
+}
+
+.qa .plainGrid {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    left: 0px
+}
+
+.qa .plainGrid .centerCircle {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    background: #212121;
+    border: 10px solid #666;
+    text-align: center;
+    z-index: 9
+}
+
+.qa .plainGrid .centerCircle .spinner {
+    position: absolute;
+    width: 100px;
+    height: 100px
+}
+
+.qa .plainGrid .centerCircle .spinner .sphear {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    clip: rect(0px, 100px, 100px, 50px);
+    background: #FFDD47;
+    z-index: 1
+}
+
+.qa .plainGrid .centerCircle .spinner .sphear .pie {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    clip: rect(0px, 100px, 100px, 50px);
+    background: #666;
+    z-index: 1
+}
+
+.qa .plainGrid .centerCircle .spinner .sphear .mask {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    clip: rect(0px, 100px, 100px, 50px);
+    background: #FFDD47;
+    z-index: 9
+}
+
+.qa .plainGrid .centerCircle .spinner .sphear.right {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.qa .plainGrid .centerCircle .spinner .sphear.right .mask {
+    background: #666
+}
+
+.qa .plainGrid .centerCircle .spinner.spin .sphear.left .pie {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: spin;
+    -o-transition: rotate(3600deg)
+}
+
+.qa .plainGrid .centerCircle .spinner.spin .sphear.left .mask {
+    animation-name: mask;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: mask;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: mask;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: mask;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: mask
+}
+
+.qa .plainGrid .centerCircle .spinner.spin .sphear.right .pie {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: spin;
+    -o-transition: rotate(3600deg);
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s
+}
+
+.qa .plainGrid .centerCircle .spinner.spin .sphear.right .mask {
+    animation-name: mask;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: mask;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: mask;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: mask;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: mask;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s
+}
+
+.qa .plainGrid .centerCircle .spinner.paused .sphear.left .pie {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa .plainGrid .centerCircle .spinner.paused .sphear.left .mask {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa .plainGrid .centerCircle .spinner.paused .sphear.right .pie {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa .plainGrid .centerCircle .spinner.paused .sphear.right .mask {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa .plainGrid .centerCircle .circle {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 30px;
+    line-height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background: #212121;
+    font-weight: bold;
+    color: #fff;
+    z-index: 9
+}
+
+.qa .plainGrid .centerCircle .circle.btn {
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4)
+}
+
+.qa .plainGrid .centerCircle:hover .circle.btn {
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+}
+
+.qa .plainGrid .centerCircle .spinner {
+    margin-top: -10px;
+    margin-left: -10px
+}
+
+.qa .popout {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 64px 20px 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99
+}
+
+.qa .popout .popoutCancel {
+    position: absolute;
+    right: 30px;
+    z-index: 9
+}
+
+.qa .popout .popoutContent {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -khtml-border-radius: 4px 4px 4px 4px;
+    -o-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    position: absolute;
+    padding: 20px;
+    background: #f9f7f5;
+    text-align: left;
+    z-index: 1
+}
+
+.qa .popout .popoutContent .caption {
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.qa .popout.hidden {
+    display: none
+}
+
+.qa .popout.hidden .popoutContent {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0
+}
+
+.qa #section-curtain {
+    position: absolute;
+    height: 100%;
+    z-index: 998
+}
+
+.qa #section-curtain .shifting {
+    position: absolute;
+    margin-top: 40px;
+    top: 50%;
+    left: 50%;
+    margin-left: -315px;
+    width: 630px
+}
+
+.qa #section-curtain .shifting .item {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    display: inline-block;
+    width: 30px
+}
+
+.qa #section-curtain .shifting .item .fa {
+    font-size: 30px;
+    line-height: 32px
+}
+
+.qa #section-curtain .shifting .item.item_0 {
+    color: #33afa5
+}
+
+.qa #section-curtain .shifting .item.item_1 {
+    color: #207791
+}
+
+.qa #section-curtain .shifting .item.item_2 {
+    color: #b9e398
+}
+
+.qa #section-curtain .shifting .item.item_3 {
+    color: #d95b43
+}
+
+.qa #section-curtain .shifting .item.item_4 {
+    color: #a71b4a
+}
+
+.qa #section-curtain .shifting .item.item_5 {
+    color: #fce08b
+}
+
+.qa #section-curtain .shifting .item.item_6 {
+    color: #eee
+}
+
+.qa #section-curtain .shifting .item+.item {
+    margin-left: 60px
+}
+
+.qa #section-curtain .shifting .item.hide {
+    display: none
+}
+
+.qa #section-curtain .btnStartQuiz {
+    -moz-border-radius: 100px 100px 100px 100px;
+    -webkit-border-radius: 100px 100px 100px 100px;
+    -khtml-border-radius: 100px 100px 100px 100px;
+    -o-border-radius: 100px 100px 100px 100px;
+    border-radius: 100px 100px 100px 100px;
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background: #212121;
+    border: 10px solid #666;
+    cursor: pointer
+}
+
+.qa #section-curtain .btnStartQuiz .text {
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    -moz-border-radius: 100px 100px 100px 100px;
+    -webkit-border-radius: 100px 100px 100px 100px;
+    -khtml-border-radius: 100px 100px 100px 100px;
+    -o-border-radius: 100px 100px 100px 100px;
+    border-radius: 100px 100px 100px 100px;
+    font-size: 30px;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    color: #fff
+}
+
+.qa #section-curtain .btnStartQuiz:hover .text {
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+}
+
+.qa #section-curtain .promo {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    width: 100%;
+    text-align: center
+}
+
+.qa #section-curtain .promo .info {
+    display: inline-block;
+    position: relative;
+    text-align: left
+}
+
+.qa #section-curtain .promo .info .loginBlock .caption {
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+    margin-right: 4px;
+    color: #fff
+}
+
+.qa #section-curtain .promo .info .loginBlock .btn {
+    display: inline-block;
+    padding: 3px 6px
+}
+
+.qa #section-curtain .promo .info .activityBlock {
+    margin-top: 5px
+}
+
+.qa #section-curtain .promo .info .activityBlock .caption {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    cursor: pointer
+}
+
+.qa #section-curtain .promoPopout .popoutCancel {
+    top: 50%;
+    margin-top: -90px
+}
+
+.qa #section-curtain .promoPopout .popoutContent {
+    top: 50%;
+    left: 0px;
+    margin: -100px 20px 0px
+}
+
+.qa #section-curtain .promoPopout .popoutContent .desc .li {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 15px;
+    list-style: decimal outside
+}
+
+.qa #section-curtain .promoPopout .popoutContent .desc .li+li {
+    margin-top: 10px
+}
+
+.qa #section-curtain.hide {
+    display: none;
+    z-index: 0
+}
+
+.qa #section-loading {
+    -webkit-transition: padding 0.3s ease-out, opacity 0.3s ease-out;
+    -moz-transition: padding 0.3s ease-out, opacity 0.3s ease-out;
+    -o-transition: padding 0.3s ease-out, opacity 0.3s ease-out;
+    transition: padding 0.3s ease-out, opacity 0.3s ease-out;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    position: absolute;
+    height: 100%;
+    padding-bottom: 59px;
+    background: none;
+    z-index: 99
+}
+
+.qa #section-loading .gridContent {
+    width: 100%;
+    height: 100%;
+    background: #333
+}
+
+.qa #section-loading .gridContent .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -50px;
+    text-align: center
+}
+
+.qa #section-loading .gridContent .loader img {
+    width: 100px
+}
+
+.qa #section-loading .gridContent .categ {
+    position: absolute;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+    text-align: center;
+    display: none
+}
+
+.qa #section-loading .gridContent .categ .round {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: bold
+}
+
+.qa #section-loading .gridContent .categ .name {
+    font-size: 30px;
+    line-height: 32px;
+    color: #fff;
+    margin-top: 10px
+}
+
+.qa #section-loading .gridContent .icon {
+    display: none;
+    position: absolute;
+    top: 50%
+}
+
+.qa #section-loading.ready .gridContent .categ {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1
+}
+
+.qa #section-loading.ready.go .gridContent .categ {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0
+}
+
+.qa #section-loading.fadeOut {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    padding: 218px 102px 162px
+}
+
+.qa #section-loading.fadeOut .gridContent {
+    -moz-border-radius: 100px 100px 100px 100px;
+    -webkit-border-radius: 100px 100px 100px 100px;
+    -khtml-border-radius: 100px 100px 100px 100px;
+    -o-border-radius: 100px 100px 100px 100px;
+    border-radius: 100px 100px 100px 100px
+}
+
+.qa #section-loading.fadeOut .gridContent .loader {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: spin;
+    -o-transition: rotate(3600deg)
+}
+
+.qa #section-loading.hide {
+    display: none;
+    z-index: 0
+}
+
+.qa #section-quizzes {
+    height: 100%;
+    z-index: 9
+}
+
+.qa #section-quizzes .gridContent .quizzes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    text-align: center
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    overflow: hidden;
+    z-index: 100
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .avatar {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 10px 0px 10px 20px;
+    width: 60px;
+    height: 60px;
+    background: #666;
+    border: 5px solid #d4d4d4;
+    text-align: center
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .avatar .bomb {
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .avatar .member {
+    margin-top: 5px
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .scoreBoard {
+    padding: 30px 0px 0px;
+    height: 60px
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .scoreBoard .startPoint {
+    -moz-box-shadow: -2px 0px 2px #212121;
+    -webkit-box-shadow: -2px 0px 2px #212121;
+    box-shadow: -2px 0px 2px #212121;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -khtml-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: 9px;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #43bf00;
+    background: #f9f7f5
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .scoreBoard .score {
+    font-size: 15px;
+    line-height: 17px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -75px;
+    width: 100px;
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+    z-index: 97
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .scoreBoard .scoreBar {
+    -moz-box-shadow: 0px 0px 4px #212121 inset;
+    -webkit-box-shadow: 0px 0px 4px #212121 inset;
+    box-shadow: 0px 0px 4px #212121 inset;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    margin: 0px 10px 0px 22px;
+    height: 16px;
+    padding: 3px;
+    background: #535353
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .scoreBoard .scoreBar .bar {
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -khtml-border-radius: 4px 4px 4px 4px;
+    -o-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    width: 0%;
+    height: 10px;
+    background: #43bf00
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .scoreBoard.danger .startPoint {
+    border-color: #ff3939
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .scoreBoard.danger .scoreBar .bar {
+    background: #ff3939
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .scoreBoard.danger.dead .score {
+    margin-left: -55px
+}
+
+.qa #section-quizzes .gridContent .quizzes .profile .scoreBoard.high .score {
+    margin-left: -110px
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz {
+    position: absolute;
+    padding-top: 75px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: 100%
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown {
+    background: #212121;
+    border: 10px solid #666
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner {
+    position: absolute;
+    width: 90px;
+    height: 90px
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner .sphear {
+    -moz-border-radius: 45px 45px 45px 45px;
+    -webkit-border-radius: 45px 45px 45px 45px;
+    -khtml-border-radius: 45px 45px 45px 45px;
+    -o-border-radius: 45px 45px 45px 45px;
+    border-radius: 45px 45px 45px 45px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    clip: rect(0px, 90px, 90px, 45px);
+    background: #FFDD47;
+    z-index: 1
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner .sphear .pie {
+    -moz-border-radius: 45px 45px 45px 45px;
+    -webkit-border-radius: 45px 45px 45px 45px;
+    -khtml-border-radius: 45px 45px 45px 45px;
+    -o-border-radius: 45px 45px 45px 45px;
+    border-radius: 45px 45px 45px 45px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    clip: rect(0px, 90px, 90px, 45px);
+    background: #666;
+    z-index: 1
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner .sphear .mask {
+    -moz-border-radius: 45px 45px 45px 45px;
+    -webkit-border-radius: 45px 45px 45px 45px;
+    -khtml-border-radius: 45px 45px 45px 45px;
+    -o-border-radius: 45px 45px 45px 45px;
+    border-radius: 45px 45px 45px 45px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    clip: rect(0px, 90px, 90px, 45px);
+    background: #FFDD47;
+    z-index: 9
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner .sphear.right {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner .sphear.right .mask {
+    background: #666
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner.spin .sphear.left .pie {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: spin;
+    -o-transition: rotate(3600deg)
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner.spin .sphear.left .mask {
+    animation-name: mask;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: mask;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: mask;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: mask;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: mask
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner.spin .sphear.right .pie {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: spin;
+    -o-transition: rotate(3600deg);
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner.spin .sphear.right .mask {
+    animation-name: mask;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: mask;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: mask;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: mask;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: mask;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner.paused .sphear.left .pie {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner.paused .sphear.left .mask {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner.paused .sphear.right .pie {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner.paused .sphear.right .mask {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .spinner {
+    margin-left: -5px;
+    margin-top: -5px
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .countDown .time {
+    -webkit-transition: color 0.1s ease-out;
+    -moz-transition: color 0.1s ease-out;
+    -o-transition: color 0.1s ease-out;
+    transition: color 0.1s ease-out;
+    font-size: 50px;
+    line-height: 80px
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .question {
+    font-size: 20px;
+    line-height: 24px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 15px 5px 5px;
+    height: 75px;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    font-weight: bold
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .answers {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .answers tr {
+    width: 50%
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .answers tr td {
+    vertical-align: middle;
+    width: 50%;
+    border: 1px solid #eee
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .answers .ans {
+    -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
+    -moz-transition: background 0.2s ease-out, color 0.2s ease-out;
+    -o-transition: background 0.2s ease-out, color 0.2s ease-out;
+    transition: background 0.2s ease-out, color 0.2s ease-out;
+    -moz-box-shadow: 0px 0px 50px #fafafa inset;
+    -webkit-box-shadow: 0px 0px 50px #fafafa inset;
+    box-shadow: 0px 0px 50px #fafafa inset;
+    font-size: 22px;
+    line-height: 24px;
+    background: #fff;
+    cursor: pointer
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .answers .ans:hover,
+.qa #section-quizzes .gridContent .quizzes .quiz .answers .ans.selected {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz .answers .ans.disabled,
+.qa #section-quizzes .gridContent .quizzes .quiz .answers .ans.disabled:hover {
+    background: #eeeeee;
+    color: #d4d4d4;
+    cursor: default
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz.result .countDown .time {
+    color: #666
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz.result .answers .ans {
+    background: #eeeeee;
+    color: #d4d4d4;
+    cursor: default
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz.result .answers .ans.selected,
+.qa #section-quizzes .gridContent .quizzes .quiz.result .answers .ans.rightAns {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz.result .answers .ans.selected:hover,
+.qa #section-quizzes .gridContent .quizzes .quiz.result .answers .ans.rightAns:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz.result .answers .ans.rightAns {
+    color: #43bf00
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz.result .answers .ans.selected {
+    color: #ff3939
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz.result .answers .ans.selected.rightAns {
+    color: #43bf00
+}
+
+.qa #section-quizzes .gridContent .quizzes .quiz.result .answers .ans:hover {
+    -moz-box-shadow: 0px 0px 50px #fafafa inset;
+    -webkit-box-shadow: 0px 0px 50px #fafafa inset;
+    box-shadow: 0px 0px 50px #fafafa inset;
+    background: #eeeeee
+}
+
+.qa #section-quizzes .gridContent .quizzes .scorePopout {
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    z-index: 9
+}
+
+.qa #section-quizzes .gridContent .quizzes .scorePopout .score {
+    -webkit-transition: font 0.3s ease-out;
+    -moz-transition: font 0.3s ease-out;
+    -o-transition: font 0.3s ease-out;
+    transition: font 0.3s ease-out;
+    font-size: 20px;
+    line-height: 22px;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold
+}
+
+.qa #section-quizzes .gridContent .quizzes .scorePopout .bonus {
+    -webkit-transition: opacity 0.1s ease-out;
+    -moz-transition: opacity 0.1s ease-out;
+    -o-transition: opacity 0.1s ease-out;
+    transition: opacity 0.1s ease-out;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    font-size: 50px;
+    line-height: 52px;
+    position: absolute;
+    top: 50%;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    color: #facb00;
+    font-weight: bold
+}
+
+.qa #section-quizzes .gridContent .quizzes .scorePopout .bonus.true {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1
+}
+
+.qa #section-quizzes .gridContent .quizzes .scorePopout.fadeIn {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1
+}
+
+.qa #section-quizzes .gridContent .quizzes .scorePopout.fadeIn .score {
+    font-size: 40px;
+    line-height: 42px
+}
+
+.qa #section-quizzes .gridContent .quizzes .scorePopout.fadeOut {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0
+}
+
+.qa #section-quizzes .gridContent .quizzes .scorePopout.hide {
+    display: none;
+    z-index: 0
+}
+
+.qa #section-roulette {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 59px;
+    background: none;
+    z-index: 99;
+    overflow: hidden
+}
+
+.qa #section-roulette .gridContent {
+    width: 100%;
+    height: 100%;
+    background: #333
+}
+
+.qa #section-roulette .gridContent .roulette {
+    text-align: center
+}
+
+.qa #section-roulette .gridContent .roulette .bonus {
+    padding: 20px 20px 0px;
+    text-align: center;
+    display: none
+}
+
+.qa #section-roulette .gridContent .roulette .bonus .type {
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -khtml-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px;
+    height: 60px;
+    background: #212121
+}
+
+.qa #section-roulette .gridContent .roulette .bonus .type span {
+    font-size: 22px;
+    line-height: 20px;
+    color: #fff;
+    display: none
+}
+
+.qa #section-roulette .gridContent .roulette .stop {
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+    position: absolute;
+    cursor: default
+}
+
+.qa #section-roulette .gridContent .roulette .stop .fa {
+    color: #666
+}
+
+.qa #section-roulette .gridContent .roulette .wheel {
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+    -moz-border-radius: 300px 300px 300px 300px;
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -khtml-border-radius: 300px 300px 300px 300px;
+    -o-border-radius: 300px 300px 300px 300px;
+    border-radius: 300px 300px 300px 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    width: 300px;
+    height: 300px;
+    background: #000;
+    border: 20px solid #212121;
+    z-index: 0
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #fff
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot .symbol {
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_0 {
+    margin-top: -25px;
+    margin-left: -115px
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_1 {
+    margin-top: -102.94px;
+    margin-left: -70px
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_2 {
+    margin-top: -102.94px;
+    margin-left: 20px
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_2 .symbol {
+    font-size: 26px;
+    line-height: 50px
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_3 {
+    margin-top: -25px;
+    margin-left: 65px
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_4 {
+    margin-top: 52.94px;
+    margin-left: 20px
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_5 {
+    margin-top: 52.94px;
+    margin-left: -70px
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_0 {
+    background: #e9f8f7
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_1 {
+    background: #bfe5f1
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_2 {
+    background: #fff
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_3 {
+    background: #fff
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_4 {
+    background: #f7cad9
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.slot_5 {
+    background: #fff
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.selected.slot {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.selected.slot_0 {
+    background: #33afa5
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.selected.slot_1 {
+    background: #207791
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.selected.slot_2 {
+    background: #B9E398
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.selected.slot_3 {
+    background: #d95b43
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.selected.slot_4 {
+    background: #a71b4a
+}
+
+.qa #section-roulette .gridContent .roulette .wheel .slot.selected.slot_5 {
+    background: #FCE08B
+}
+
+.qa #section-roulette .gridContent .roulette .wheel.wheel_2 {
+    display: none
+}
+
+.qa #section-roulette .gridContent .roulette .wheel.wheel_2.active {
+    display: block
+}
+
+.qa #section-roulette .gridContent .roulette .wheel.wheel_2 .slot .symbol {
+    font-size: 24px;
+    line-height: 50px
+}
+
+.qa #section-roulette .gridContent .roulette .wheel.wheel_2.bonus_1 .slot .symbol,
+.qa #section-roulette .gridContent .roulette .wheel.wheel_2.bonus_2 .slot .symbol {
+    font-size: 14px;
+    line-height: 50px
+}
+
+.qa #section-roulette .gridContent .roulette.transiting .wheel {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: ease-in;
+    -o-animation-name: spin;
+    -o-transition: rotate(3600deg)
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .stop {
+    cursor: pointer
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .stop .fa {
+    color: #fff
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .wheel .slot {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .wheel .slot.slot_5 .symbol {
+    color: #533f02
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .wheel .slot.slot_0 {
+    animation-name: tk_0;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: tk_0;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: tk_0;
+    -moz-animation-duration: 0.6s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: tk_0;
+    -ms-animation-duration: 0.6s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: tk_0;
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .wheel .slot.slot_1 {
+    animation-name: tk_1;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: tk_1;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: tk_1;
+    -moz-animation-duration: 0.6s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: tk_1;
+    -ms-animation-duration: 0.6s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: tk_1;
+    -moz-animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+    -ms-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+    animation-delay: 0.1s
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .wheel .slot.slot_2 {
+    animation-name: tk_2;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: tk_2;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: tk_2;
+    -moz-animation-duration: 0.6s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: tk_2;
+    -ms-animation-duration: 0.6s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: tk_2;
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -ms-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .wheel .slot.slot_3 {
+    animation-name: tk_3;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: tk_3;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: tk_3;
+    -moz-animation-duration: 0.6s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: tk_3;
+    -ms-animation-duration: 0.6s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: tk_3;
+    -moz-animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    -ms-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .wheel .slot.slot_4 {
+    animation-name: tk_4;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: tk_4;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: tk_4;
+    -moz-animation-duration: 0.6s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: tk_4;
+    -ms-animation-duration: 0.6s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: tk_4;
+    -moz-animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -ms-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s
+}
+
+.qa #section-roulette .gridContent .roulette.rolling .wheel .slot.slot_5 {
+    animation-name: tk_5;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: tk_5;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: tk_5;
+    -moz-animation-duration: 0.6s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: tk_5;
+    -ms-animation-duration: 0.6s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: tk_5;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s
+}
+
+.qa #section-roulette .gridContent .roulette.round_1 .bonus {
+    display: block
+}
+
+.qa #section-roulette .gridContent .roulette.round_1 .bonus .type .selected {
+    display: block
+}
+
+.qa #section-roulette .gridContent .roulette.round_1 .stop {
+    margin-top: 0px
+}
+
+.qa #section-roulette .gridContent .roulette.round_1 .wheel {
+    margin-top: -100px
+}
+
+.qa #section-roulette.hide {
+    display: none;
+    z-index: 0
+}
+
+.qa #section-result {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    padding-bottom: 59px;
+    background: none;
+    overflow: hidden;
+    z-index: 998
+}
+
+.qa #section-result .gridContent {
+    width: 100%;
+    height: 100%;
+    background: #333
+}
+
+.qa #section-result .gridContent .gameOver {
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    width: 100%;
+    text-align: center
+}
+
+.qa #section-result .gridContent .gameOver .text span {
+    -webkit-transition: margin 0.4s ease-in, opacity 0.2s ease-in;
+    -moz-transition: margin 0.4s ease-in, opacity 0.2s ease-in;
+    -o-transition: margin 0.4s ease-in, opacity 0.2s ease-in;
+    transition: margin 0.4s ease-in, opacity 0.2s ease-in;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    font-size: 30px;
+    line-height: 32px;
+    position: absolute;
+    left: 50%;
+    padding: 5px;
+    width: 200px;
+    font-weight: bold;
+    font-family: Verdana, Arial
+}
+
+.qa #section-result .gridContent .gameOver .text span.left {
+    margin-left: -200px;
+    text-align: right;
+    color: #a4a4a4
+}
+
+.qa #section-result .gridContent .gameOver .text span.right {
+    margin-top: 0px;
+    text-align: left;
+    color: #ff3939
+}
+
+.qa #section-result .gridContent .gameOver.hide .text span.left {
+    margin-left: -600px
+}
+
+.qa #section-result .gridContent .gameOver.hide .text span.right {
+    margin-left: 400px
+}
+
+.qa #section-result .gridContent .gameOver.fadeOut .text span {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0
+}
+
+.qa #section-result .gridContent .gameOver.fadeOut .text span.left {
+    margin-top: -100%
+}
+
+.qa #section-result .gridContent .gameOver.fadeOut .text span.right {
+    margin-top: 100%
+}
+
+.qa #section-result .gridContent .leaderBuilder {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-top: 44px;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    text-align: center
+}
+
+.qa #section-result .gridContent .leaderBuilder .icon {
+    font-size: 32px;
+    line-height: 34px;
+    margin-top: 20px;
+    color: #facb00
+}
+
+.qa #section-result .gridContent .leaderBuilder .title {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 5px;
+    color: #fff
+}
+
+.qa #section-result .gridContent .leaderBuilder .form {
+    margin-top: 30px;
+    padding: 0px 10px
+}
+
+.qa #section-result .gridContent .leaderBuilder .form .caption {
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    color: #fff
+}
+
+.qa #section-result .gridContent .leaderBuilder .form .nameInput {
+    width: 85%
+}
+
+.qa #section-result .gridContent .leaderBuilder .form .btns {
+    margin-top: 10px;
+    width: 100%
+}
+
+.qa #section-result .gridContent .leaderBuilder .form .btns .btn {
+    width: 40%
+}
+
+.qa #section-result .gridContent .leaderBuilder .form .btns .btn+.btn {
+    margin-left: 5%
+}
+
+.qa #section-result .gridContent .leaderBuilder.hide {
+    display: none
+}
+
+.qa #section-result .gridContent .rankPopout .popoutCancel {
+    margin-top: 10px
+}
+
+.qa #section-result .gridContent .rankPopout .popoutContent {
+    position: relative
+}
+
+.qa #section-result .gridContent .rankPopout .popoutContent .rankList .li {
+    font-size: 12px;
+    line-height: 14px;
+    display: list-item;
+    list-style: decimal outside;
+    margin-left: 20px;
+    font-weight: bold
+}
+
+.qa #section-result .gridContent .rankPopout .popoutContent .rankList .li .name {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal
+}
+
+.qa #section-result .gridContent .rankPopout .popoutContent .rankList .li .score {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    float: right
+}
+
+.qa #section-result .gridContent .rankPopout .popoutContent .rankList .li+.li {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #d4d4d4
+}
+
+.qa #section-result .gridContent .rankPopout .popoutContent .rankList .li.user {
+    color: #43bf00
+}
+
+.qa #section-result .gridContent .rankPopout .popoutContent .rankList .li.user .name {
+    font-weight: bold
+}
+
+.qa #section-result .gridContent .leaderBoard {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-top: 44px;
+    width: 100%;
+    height: 100%;
+    background: #333
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank {
+    margin-top: 0px
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner {
+    position: absolute;
+    width: 100px;
+    height: 100px
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner .sphear {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    clip: rect(0px, 100px, 100px, 50px);
+    background: #FFDD47;
+    z-index: 1
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner .sphear .pie {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    clip: rect(0px, 100px, 100px, 50px);
+    background: #666;
+    z-index: 1
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner .sphear .mask {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -khtml-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    clip: rect(0px, 100px, 100px, 50px);
+    background: #FFDD47;
+    z-index: 9
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner .sphear.right {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner .sphear.right .mask {
+    background: #666
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.spin .sphear.left .pie {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: spin;
+    -o-transition: rotate(3600deg)
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.spin .sphear.left .mask {
+    animation-name: mask;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: mask;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: mask;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: mask;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: mask
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.spin .sphear.right .pie {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: spin;
+    -o-transition: rotate(3600deg);
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.spin .sphear.right .mask {
+    animation-name: mask;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: mask;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: mask;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: mask;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: mask;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.paused .sphear.left .pie {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.paused .sphear.left .mask {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.paused .sphear.right .pie {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.paused .sphear.right .mask {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.countdown .sphear.left .pie {
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.countdown .sphear.left .mask {
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.countdown .sphear.right .pie {
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.countdown .sphear.right .mask {
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner .sphear.left .mask {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner .sphear.right .mask {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.aboveAvg .sphear.left .mask {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .spinner.aboveAvg .sphear.right .mask {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value*100)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .circle {
+    font-size: 16px;
+    line-height: 80px
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .circle .number {
+    font-size: 30px;
+    line-height: 80px
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .rankInfo {
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -10px;
+    text-align: left
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .rankInfo .info {
+    display: block
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .rankInfo .info .caption {
+    font-size: 12px;
+    line-height: 14px;
+    color: #a4a4a4
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .rankInfo .info .val {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 2px;
+    font-weight: bold;
+    color: #d4d4d4
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .rankInfo .info+.info {
+    margin-top: 5px
+}
+
+.qa #section-result .gridContent .leaderBoard .personalRank .rankInfo .info.personal .val {
+    color: #facb00
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders {
+    padding: 5px 10px
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader {
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -khtml-border-radius: 4px 4px 4px 4px;
+    -o-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px 10px;
+    background: #212121;
+    text-align: left
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .label {
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 1px;
+    color: #facb00;
+    font-weight: bold
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .rank {
+    display: inline-block;
+    position: absolute;
+    margin-top: 15px;
+    color: #facb00
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .rank .number {
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+    left: 50%;
+    margin-top: 3px;
+    margin-left: -4px;
+    color: #000;
+    font-weight: bold;
+    text-align: left
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .rank .fa {
+    font-size: 25px;
+    line-height: 27px
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .moreBtn {
+    position: absolute;
+    right: 20px;
+    margin-top: 5px
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .moreBtn .btn {
+    text-align: center
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .moreBtn .btn.topBtn {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 3px;
+    font-weight: bold;
+    color: #d4d4d4;
+    text-align: center
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .moreBtn .btn.topBtn .fa {
+    font-size: 18px;
+    line-height: 20px;
+    display: block
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .moreBtn .btn.topBtn:hover {
+    color: #fff
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .moreBtn+.info {
+    width: 100%;
+    padding-right: 50px
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .info {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 40px;
+    color: #fff
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .info .name {
+    font-size: 18px;
+    line-height: 20px;
+    font-style: italic
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader .info .score {
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 5px;
+    font-weight: bold
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader+.leader {
+    margin-top: 5px
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader.personal .label {
+    color: #43bf00
+}
+
+.qa #section-result .gridContent .leaderBoard .leaders .leader.personal .rank {
+    color: #43bf00
+}
+
+.qa #section-result .gridContent .leaderBoard .stats {
+    position: absolute;
+    bottom: 70px;
+    margin-top: 10px;
+    padding: 0px 10px;
+    width: 100%;
+    text-align: center
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat .title {
+    font-size: 12px;
+    line-height: 14px
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat .value {
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -khtml-border-radius: 4px 4px 4px 4px;
+    -o-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 4px;
+    padding: 8px 10px;
+    border: 1px solid #fff
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat .value .val {
+    font-size: 14px;
+    line-height: 16px
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat+.stat {
+    margin-left: 6.5%
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat.stat_0 {
+    color: #44c2f6
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat.stat_0 .value {
+    border-color: #44c2f6
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat.stat_1 {
+    color: #E57300
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat.stat_1 .value {
+    border-color: #E57300
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat.stat_2 {
+    color: #43bf00
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat.stat_2 .value {
+    border-color: #43bf00
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat.stat_3 {
+    color: #F28157
+}
+
+.qa #section-result .gridContent .leaderBoard .stats .stat.stat_3 .value {
+    border-color: #F28157
+}
+
+.qa #section-result .gridContent .leaderBoard .btns {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 0px 10px;
+    text-align: center
+}
+
+.qa #section-result .gridContent .leaderBoard .btns .btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    height: 36px
+}
+
+.qa #section-result .gridContent .leaderBoard .btns .btn+.btn {
+    margin-left: 5%
+}
+
+.qa #section-result .gridContent .leaderBoard .btns .btn.btnReplay {
+    font-size: 15px;
+    line-height: 22px
+}
+
+.qa #section-result .gridContent .leaderBoard .btns .btn.fbShare a {
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -khtml-border-radius: 4px 4px 4px 4px;
+    -o-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    text-align: center;
+    height: 36px
+}
+
+.qa #section-result .gridContent .leaderBoard .btns .btn.fbShare a .text {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 6px 0px;
+    height: auto
+}
+
+.qa #section-result .gridContent .leaderBoard .btns .btn.fbShare a .triangle {
+    display: none
+}
+
+.qa #section-result .gridContent .leaderBoard .btns .btn.fbShare a .count {
+    display: none
+}
+
+.qa #section-result .gridContent .leaderBoard.hide {
+    display: none
+}
+
+.qa #section-result.hide {
+    display: none;
+    z-index: 0
+}
+
+.qa.italy #section-curtain .flagTag {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 30px;
+    width: 300px;
+    z-index: 1
+}
+
+.qa.italy #section-curtain .flagTag .stripe {
+    display: block;
+    width: 100%;
+    height: 10px
+}
+
+.qa.italy #section-curtain .flagTag .stripe.stripe_0 {
+    background: #009069
+}
+
+.qa.italy #section-curtain .flagTag .stripe.stripe_1 {
+    background: #F1F1F1
+}
+
+.qa.italy #section-curtain .flagTag .stripe.stripe_2 {
+    background: #CD2A3D
+}
+
+.qa.italy #section-curtain .title {
+    margin-top: -100px
+}
+
+.qa.italy #section-curtain .subTitle {
+    font-size: 15px;
+    line-height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -50%;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1
+}
+
+.qa.italy #section-curtain .shifting {
+    position: absolute;
+    margin-top: 40px;
+    top: 50%;
+    left: 50%;
+    margin-left: -315px;
+    width: 630px
+}
+
+.qa.italy #section-curtain .shifting .item {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    display: inline-block;
+    width: 30px
+}
+
+.qa.italy #section-curtain .shifting .item .fa {
+    font-size: 30px;
+    line-height: 32px
+}
+
+.qa.italy #section-curtain .shifting .item.item_0 {
+    color: orange
+}
+
+.qa.italy #section-curtain .shifting .item.item_1 {
+    color: #ffd15a
+}
+
+.qa.italy #section-curtain .shifting .item.item_2 {
+    color: #b10038
+}
+
+.qa.italy #section-curtain .shifting .item.item_3 {
+    color: #8f9a6b
+}
+
+.qa.italy #section-curtain .shifting .item.item_4 {
+    color: #983200
+}
+
+.qa.italy #section-curtain .shifting .item.item_5 {
+    color: #dea247
+}
+
+.qa.italy #section-curtain .shifting .item.item_6 {
+    color: #e67914
+}
+
+.qa.italy #section-curtain .promoPopout .popoutCancel {
+    margin-top: -150px
+}
+
+.qa.italy #section-curtain .promoPopout .popoutContent {
+    margin-top: -160px
+}
+
+.qa.italy #section-curtain .promoPopout .popoutContent .desc .li {
+    margin-left: 0px;
+    list-style: none
+}
+
+.qa.italy #section-curtain .promoPopout .popoutContent .btns {
+    display: block;
+    margin-top: 20px;
+    text-align: center
+}
+
+.qa.italy #section-curtain .promoPopout .popoutContent .btns .startBtn {
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -khtml-border-radius: 4px 4px 4px 4px;
+    -o-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 16px;
+    line-height: 18px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #F28157;
+    color: #F28157;
+    cursor: pointer
+}
+
+.qa.italy #section-curtain .promoPopout .popoutContent .btns .startBtn:hover {
+    font-weight: bold
+}
+
+@media all and (max-width: 960px) {
+    .activity #header {
+        display: none
+    }
+    .activity #section-quizzes .gridContent .quizzes {
+        width: 90%
+    }
+    .activity #section-quizzes .gridContent .quizzes .quiz .grid {
+        width: 29%
+    }
+    .activity #section-quizzes .gridContent .quizzes .quiz .grid .text {
+        width: auto
+    }
+    .activity #footer #footerWrapper {
+        padding-top: 24px
+    }
+}
+
+@media all and (max-width: 800px) {
+    .activity #section-curtain .gridContent .title {
+        bottom: 60%
+    }
+    .activity #section-curtain .gridContent .content {
+        bottom: 50%
+    }
+    .activity #section-curtain .gridContent .globe {
+        bottom: -50%;
+        margin-left: -50%;
+        width: 100%
+    }
+    .activity #section-curtain .gridContent .globe img {
+        width: 80%
+    }
+}
+
+@media all and (max-width: 420px) {
+    .activity #section-curtain .gridContent .content {
+        margin-left: -45%;
+        width: 90%
+    }
+    .activity #section-quizzes .gridContent .quizzes #quiz_result.quiz .content .caption {
+        font-size: 16px;
+        line-height: 18px
+    }
+    .activity #section-quizzes .gridContent .quizzes #quiz_result.quiz .content .result {
+        font-size: 40px;
+        line-height: 42px;
+        margin-top: 10px
+    }
+    .activity #section-quizzes .gridContent .quizzes #quiz_result.quiz .content .more {
+        padding: 20px 10px 10px
+    }
+    .activity #section-quizzes .gridContent .quizzes #quiz_result.quiz .content .more .socialMedias .btn {
+        margin: 0px 0px 10px 0px
+    }
+    .activity #section-quizzes .gridContent .quizzes #quiz_result.quiz .content .more .socialMedias .btn+.btn {
+        margin-left: 5px
+    }
+}

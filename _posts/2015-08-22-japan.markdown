@@ -1,0 +1,36 @@
+---
+layout: product_jp
+title:  "Wi-Go日本 行動上網分享器租借"
+date:   2015-08-22 14:20:07
+permalink: /product/japan.html
+categories: ['日韓','熱門']
+machinename: "日本上網分享器"
+nickname: "日本超值機"
+useCountry: "日本"
+price:     "150元起"
+origPrice: "150元起"
+serviceId: ['2','3']
+imageBig:  "/images/v2/country/japan/japan-big2.jpg"
+imageMachine: "//cdn.wi-go.com.tw/images/v2/country/japan/wgjp.jpg"
+image: "//cdn.wi-go.com.tw/images/v2/country/japan/japan.jpg"
+countryFlag: "/images/v2/flags/flat/32/Japan.png"
+
+say: "不管是在古羅馬競技場，還是風情萬種的威尼斯，義大利上網無限分享無限精彩。"
+
+references:
+    - text: "※1 使用時間會因環境與電波及上網人數不同而調整。部分機型使用時間約可使用4小時，建議搭配行動電源使用。"
+    - text: "※2 公平使用政策：義大利分享器每台分享器無數據使用上限，保證高速上網使用量為400MB/日，若您超過此使用量，則有可能遭到限速56kbps，本公司對此情形無法退費。"
+    - text: "※3 歐洲電信網路架設不如台灣基地台綿密，在小城鎮或是室內仍有可能有收訊死角，訊號強弱仍看當地現場狀況為主。"
+
+slogan:
+    - title: "便宜革命1！"
+      comment: "誰說便宜不能有好貨，每天只要299元，可4人共用，朋友分享超級划算！"
+    - title: "收訊最好！"
+      comment: "義大利最大電信公司，收訊絕對第一！"
+    - title: "無附加費！"
+      comment: "無可用總流量限制，無費用超收問題，不加收才是真正的便宜革命！"
+    - title: "絕對高速！"
+      comment: "本公司使用LTE網卡，義大利高速上網不用煩惱！"
+    - title: "輕量流暢！"
+      comment: "重量僅140克，15秒快速啟動！"
+---

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="zh"> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body class="header-fixed">
+	  <div class="wrapper">
+	  	  {% include header.html %}
+		
+			<!--=== Breadcrumbs v3 ===-->
+			<div class="breadcrumbs-v3" style="background: url({{page.imageBig}}) no-repeat; background-size: cover; background-position: center center;">
+			    <div class="container text-center">
+			        <h1></h1>
+			    </div><!--/end container-->
+			</div>
+			<!--=== End Breadcrumbs v3 ===-->
+		
+		    <!--=== Breadcrumbs ===-->
+		    <div class="breadcrumbs">
+		        <div class="container">
+		            <ul class="pull-left breadcrumb">
+		                <li><a href="/">首頁</a></li>
+		                <li><a href="category.html">使用國家一覽</a></li>
+		                <li><a href="category.html">{{page.categories}}</a></li>
+		                <li class="active"><a href="{{page.permalink}}">{{page.machinename}}</a></li>
+		            </ul>
+		        </div>
+		    </div><!--/breadcrumbs-->
+		    <!--=== End Breadcrumbs ===-->
+		    
+		    
+		    <!--=== Content Part ===-->
+		    <div class="container content">
+		    	<div class="row portfolio-item margin-bottom-50"> 
+		    		<div class="col-md-3">
+				    	<ul class="list-group sidebar-nav-v1" id="sidebar-nav">
+			   				{% for category in site.categories %}
+				                <li class="list-group-item list-toggle">                   
+				                    <a data-toggle="collapse" data-parent="#sidebar-nav" href="#{{ category | first }}">{{ category | first }} ({{ category | last | size }})</a>
+				                    <ul id="{{ category | first }}" class="collapse">
+									    {% for posts in category %}
+									      {% for post in posts %}
+									      	{% if post.title=="" %}
+									        	<li><a href="{{ post.url }}">{{ post.nickname }}</a></li>
+								            {% endif %}
+									      {% endfor %}
+									    {% endfor %}
+				                    </ul>
+				                </li>
+				            {% endfor %}
+				    	</ul>
+		    		</div>
+		            <!-- Content Info -->
+		            <div class="col-md-9 md-margin-bottom-40">
+		            	<div class="row">
+			            	<div class="col-md-6">
+				                <h2>設備介紹</h2>
+									<!--Table Search v1-->
+				                    <div class="table-search-v1 margin-bottom-20">
+				                        <div class="table-responsive">
+				                            <table class="table table-hover table-bordered table-striped">
+				                                <tbody>
+				                                    <tr>
+				                                        <td>
+				                                            可使用國家
+				                                        </td>
+				                                        <td>{{ page.useCountry }}</td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>
+				                                            租金(1日)
+				                                        </td>
+				                                        <td>{{ page.price }}</td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>
+				                                            可使用國家
+				                                        </td>
+				                                        <td>{{ page.useCountry }}</td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>
+				                                            可使用國家
+				                                        </td>
+				                                        <td>{{ page.useCountry }}</td>
+				                                    </tr>
+				                                </tbody>
+				                            </table>
+				                        </div>    
+				                    </div>
+				                    <!--End Table Search v1-->
+				                   
+				                <h2>查詢價格</h2>
+				                
+				                <form action="#" id="sky-form" class="sky-form" style="box-shadow: 0 0 0px rgba(0,0,0,0);">
+				                <input type="hidden" name="serviceID" id="serviceID" value="{{page.serviceId}}">
+				                <div class="row">
+				                    <section class="col col-6">
+				                        起租日
+				                        <label class="input">
+				                            <i class="icon-append fa fa-calendar"></i>
+				                            <input type="text" name="startDate" id="startDate" placeholder="起租日">
+				                        </label>
+				                    </section>
+				                    <section class="col col-6">
+				                    	退租日
+				                        <label class="input">
+				                            <i class="icon-append fa fa-calendar"></i>
+				                            <input type="text" name="finishDate" id="finishDate" placeholder="退租日">
+				                        </label>
+				                    </section>
+				                </div>
+				                </form>
+				            </div>
+				            <!-- End Content Info -->
+				            
+		            		<!-- Carousel -->
+				            <div class="col-md-6 md-margin-bottom-40">
+				                <div class="carousel slide carousel-v1" id="myCarousel">
+				                    <div class="carousel-inner">
+				                        <div class="item active">
+				                            <img alt="" src="{{ page.imageMachine }}">
+				                            <div class="carousel-caption">
+				                                <p>本圖僅供參考，詳細機型以本公司庫存為主</p>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <!-- End Carousel -->
+
+		            	</div>
+	            	</div>
+		             
+		        </div><!--/row-->
+		    </div><!--/container-->		
+		    <!--=== End Content Part ===-->
+		
+		    <!--=== Content Part ===-->
+		    <div class="container">		
+		    	<div class="row">
+		            <!-- Left Sidebar -->
+		        	<div class="col-md-4 md-margin-bottom-60">
+		                <!--Blog Post-->        
+		                    <div class="blog-img">
+		                        <img class="img-responsive" src="{{ page.imageMachine }}" alt="">
+		                    </div>
+		                <!--End Blog Post-->        
+		
+		            </div>
+		            <!-- End Left Sidebar -->
+		
+		            <!-- Right Sidebar -->
+		            <div class="col-md-8">
+		                <table style="width:100%">
+							{% for slogan in page.slogan %}
+								<tr>
+									<th style="width:150px; font-size:30px; color:#ff0000;">{{ slogan.title }}</th>
+									<td style="font-size:16px;">{{ slogan.comment }}</td>
+								</tr>
+							{% endfor %}
+						</table>
+		            </div>
+		            <!-- End Right Sidebar -->
+		        </div><!--/row-->        
+		    </div><!--/container-->		
+		    <!--=== End Content Part ===-->    </div><!--/container-->	 	
+		    <!--=== End Content Part ===-->
+		
+		
+		    <!--=== Content Part ===-->
+		    <div class="container content">		
+		        <div class="row no-space-pricing pricing-mega-v3">
+		            <div class="col-md-12 col-sm-12 block">
+		                <div class="pricing">
+		                    <div class="pricing-head">
+		                        <h3>
+		                            單一價格
+		                        </h3>
+		                        <h4 class="price" style="color:#000000">
+		                            <i></i>{{ page.price }}<i>元/日</i>
+		                        </h4>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="row no-space-pricing pricing-mega-v3">
+		            <div class="col-md-12 col-sm-12 block">
+		                <div class="pricing">
+		                    <div class="pricing-head">
+		                        <h3>
+		                            說明
+		                        </h3>
+		                    </div>
+		                    <ul class="list-unstyled">
+								{% for reference in page.references %}
+								  <li style="font-size:16px;">{{ reference.text }}</li>
+								{% endfor %}
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="row">
+				    <div class="col-md-12 col-centered">
+						<a href="//wi-go.com.tw/rent/booking-days.php?serviceID={{page.serviceId}}"><img src="//cdn.wi-go.com.tw/images/reserve.png" height="50" class=" center-block"/></a>
+				    </div>
+				</div>
+		        <!--  End Pricing Mega v3 -->
+			</div><!--/container-->		
+	
+	  	  {% include footer.html %}
+	  </div>
+		{% include foot.html %}
+		
+	<script type="text/javascript">
+	        
+		jQuery(document).ready(function() {
+	        $('#startDate').datepicker({
+	            dateFormat: 'yy-mm-dd',
+	            prevText: '<i class="fa fa-angle-left"></i>',
+	            nextText: '<i class="fa fa-angle-right"></i>',
+	            onSelect: function( selectedDate )
+	            {
+		            var minDate = new Date();
+		            minDate.setDate(minDate.getDate() + 3);
+	                $('#finishDate').datepicker('option', 'minDate', minDate);
+	            }
+	        });
+	        
+	        
+	        $('#finishDate').datepicker({
+	            dateFormat: 'yy-mm-dd',
+	            prevText: '<i class="fa fa-angle-left"></i>',
+	            nextText: '<i class="fa fa-angle-right"></i>',
+	            onSelect: function( selectedDate )
+	            {
+	                $('#startDate').datepicker('option', 'maxDate', selectedDate);
+	            }
+	        });
+	        
+	        
+			var minDate = new Date();
+			minDate.setDate(minDate.getDate() + 4);
+			
+	        $('#startDate').datepicker('option', 'minDate', minDate);
+	        $('#finishDate').datepicker('option', 'minDate', minDate);
+	    });
+	</script>
+  </body>
+
+</html>

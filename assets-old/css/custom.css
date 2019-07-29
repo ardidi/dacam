@@ -1,0 +1,61 @@
+/* Add here all your css styles (customizations) */
+@media (min-width: 767px) {
+	
+	.header .navbar-nav {
+		height: 68px;
+	}
+	
+	
+}
+
+
+@media (max-width: 767px) {
+	.navbar-toggle{
+		height: 68px;
+	}
+}
+
+.step p{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    font-size: 18px;
+    margin: 0;
+    outline: 0 none;
+    padding-left: 50px;
+    vertical-align: baseline;
+}
+
+.step {
+    border-top: 1px dashed #CFCFCF;
+    padding: 10px 0 20px;
+}
+
+.step table {
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.step table th {
+    color: #E10000;
+    font-size: 24px;
+    padding: 5px 0;
+    text-align: center;
+    width: 180px;
+}
+
+.step table td {
+    border-left: 1px dotted #DCDCDC;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.attention {
+    color: #E10000;
+    font-size: 30px;
+}
+
+.attention2 {
+    color: #E10000;
+}

@@ -1,0 +1,36 @@
+---
+layout: product
+title:  "Wi-Go德國 行動上網分享器租借"
+date:   2015-08-05 00:00:00
+permalink: /product/german.html
+categories: 歐洲
+machinename: "德國上網分享器"
+nickname: "德國"
+useCountry: "德國"
+price:     "299"
+origPrice: "299"
+serviceId: "22"
+datalimit: "流量無上限"
+datalimitExplain: "請參照本頁下方說明"
+imageBig:  "/images/v2/country/germany/germany-big-2.jpg"
+imageMachine: "//cdn.wi-go.com.tw/images/v2/country/germany/germany-m.png"
+image: "//cdn.wi-go.com.tw/images/v2/country/germany/germany.jpg"
+countryFlag: "/images/v2/flags/flat/32/Germany.png"
+
+say: "感嘆新天鵝堡的美麗景緻，科隆大教堂的雄偉，德國上網無限分享無限精彩。"
+
+references:
+    - text: "※1 使用時間會因環境與電波及上網人數不同而調整。實際使用時間約4小時，建議搭配行動電源使用。"
+    - text: "※2 公平使用政策：德國分享器每位使用者無數據使用上限，保證高速上網使用量為400MB/日，若您超過此使用量，則有可能遭到限速56kbps，本公司對此情形無法退費。"
+    - text: "※3 歐洲電信網路架設不如台灣基地台綿密，在小城鎮或是室內仍有可能有收訊死角，訊號強弱仍看當地現場狀況為主。"
+
+slogan:
+    - title: "便宜革命！"
+      comment: "誰說便宜不能有好貨，每天只要299元，可4人共用，朋友分享超級划算！"
+    - title: "無附加費！"
+      comment: "無可用總流量限制，無費用超收問題，不加收才是真正的便宜革命！"
+    - title: "絕對高速！"
+      comment: "本公司使用2015年分享器，德國高速上網不用煩惱！"
+    - title: "輕量流暢！"
+      comment: "重量僅140克，15秒快速啟動！"
+---

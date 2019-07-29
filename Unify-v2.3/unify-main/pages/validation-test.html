@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Validation Test | Unify - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CPlayfair+Display%7CRaleway%7CSpectral%7CRubik">
+
+  <!-- CSS Global Compulsory -->
+  <link rel="stylesheet" href="../../assets/vendor/bootstrap/bootstrap.min.css">
+
+  <!-- CSS Customization -->
+  <link rel="stylesheet" href="../../assets/css/custom.css">
+</head>
+
+<body>
+<main>
+  <div class="container g-pt-100 g-pb-70">
+    <form id="changePasswordForm" class="js-validate">
+      <input name="newPassword" type="password">
+      <input name="confirmPassword" type="password">
+      <button type="submit">Change</button>
+    </form>
+  </div>
+</main>
+
+<!-- JS Global Compulsory -->
+<script src="../../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../../assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+<script src="../../assets/vendor/popper.min.js"></script>
+<script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+<!-- JS Unify -->
+<script src="../../assets/js/hs.core.js"></script>
+<script src="../../assets/js/components/hs.validation.js"></script>
+
+<!-- JS Customization -->
+<script src="../../assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of form validation
+    $.HSCore.components.HSValidation.init('#changePasswordForm', {
+      rules: {
+        newPassword: {
+          required: true,
+          minlength: 6
+        },
+        confirmPassword: {
+          equalTo: '#newPassword'
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+	<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+	<style type="text/css" media="screen, projection">
+	  @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
+	</style>
+	<script type="text/javascript">
+	  if (typeof(Zenbox) !== "undefined") {
+	    Zenbox.init({
+	      dropboxID:   "20310298",
+	      url:         "https://wigo.zendesk.com",
+	      tabTooltip:  "線上諮詢",
+	      tabImageURL: "https://wi-go.com.tw/images/v2/tab_zh-tw_ask_us_left.png",
+	      tabColor:    "#008000",
+	      tabPosition: "Left"
+	    });
+	  }
+	</script>
+<div class="wrapper">    
+    <!--=== Header v6 ===-->
+    <div class="header-v6 header-classic-white header-sticky">
+        <!-- Navbar -->
+        <div class="navbar mega-menu" role="navigation">
+            <div class="container container-space">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Navbar Brand -->
+                    <div class="navbar-brand">
+                        <a href="/index.html">
+                            <img class="shrink-logo" src="/images/logo-t.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- ENd Navbar Brand -->
+
+                    <!-- Header Inner Right -->
+                    <div class="header-inner-right">
+                        <ul class="menu-icons-list">
+                            <li class="menu-icons shopping-cart">
+                            	
+                                <i class="menu-icons-style radius-x"><a href="//s.wi-go.com.tw/"><img class="menu-icons-style radius-x fa fa-shopping-cart" src="/images/btn-bandwidth.png"></a></i>
+                                <!--div class="shopping-cart-open">
+                                	<form action="//s.wi-go.com.tw/index.php" id="sky-form" class="sky-form" style="box-shadow: 0 0 0px rgba(0,0,0,0);">
+	                                    <span class="shc-title">預約E-mail：<input type="text" name="mail" placeholder="您訂單的Email"></span>
+	                                    <span class="shc-title">電話號碼：<input type="text" name="phone" placeholder="您訂單中留下之手機號碼"/></span>
+	                                    <button type="button" class="btn-u">登入</button>
+                                	</form>
+                                </div-->
+                            </li>
+                            <li class="menu-icons">
+                                <i class="menu-icons-style radius-x"><a href="/booking.php"><img class="menu-icons-style radius-x fa fa-shopping-cart" src="/images/btn-reserve.png"></a></i>
+                            </li>
+                        </ul>    
+                    </div>
+                    <!-- End Header Inner Right -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav">
+							<li class="dropdown mega-menu-fullwidth">
+	                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+	                            	搭配國家
+	                            </a>
+								<ul class="dropdown-menu">
+		                            <li>
+		                                <div class="mega-menu-content disable-icons">
+		                                    <div class="container">
+		                                        <div class="row equal-height">
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                    <li><h3>熱門產品</h3></li>
+		
+		                                                    <!-- Typography -->
+		                                                    <li><a href="shortcode_typo_general.html"><i class="fa fa-sort-alpha-asc"></i> General Typography</a></li>
+		                                                    <li><a href="shortcode_typo_headings.html"><i class="fa fa-magic"></i> Headings Options</a></li>
+		                                                    <li><a href="shortcode_typo_dividers.html"><i class="fa fa-ellipsis-h"></i> Dividers</a></li>
+		                                                    <li><a href="shortcode_typo_blockquote.html"><i class="fa fa-quote-left"></i> Blockquote Blocks</a></li>
+		                                                    <li><a href="shortcode_typo_boxshadows.html"><i class="fa fa-asterisk"></i> Box Shadows</a></li>
+		                                                    <li><a href="shortcode_typo_testimonials.html"><i class="fa fa-comments"></i> Testimonials</a></li>
+		                                                    <li><a href="shortcode_typo_tagline_boxes.html"><i class="fa fa-tasks"></i> Tagline Boxes</a></li>
+		                                                    <li><a href="shortcode_typo_grid.html"><i class="fa fa-align-justify"></i> Grid Layouts</a></li>
+		                                                </ul>
+		                                            </div>
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                
+		                                                    <li><h3>日韓</h3></li>
+		                                                    {% for post in site.categories['日韓'] %}
+			                                                    <li><a href="{{ post.url }}"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('{{post.countryFlag}}'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">{{ post.machinename }}</span></a></li>
+															{% endfor %}
+		                                                    
+		                                                    <li><h3>亞洲</h3></li>
+		                                                    {% for post in site.categories['亞洲'] %}
+			                                                    <li><a href="{{ post.url }}"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('{{post.countryFlag}}'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">{{ post.machinename }}</span></a></li>
+															{% endfor %}
+		                                                </ul>                                
+		                                            </div>
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                    <li><h3>歐洲</h3></li>
+		                                                    {% for post in site.categories['歐洲'] reversed%}
+			                                                    <li><a href="{{ post.url }}"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('{{post.countryFlag}}'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">{{ post.machinename }}</span></a></li>
+															{% endfor %}
+		                                                </ul>    
+		                                            </div>
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                    <li><h3>北美洲</h3></li>
+		                                                    {% for post in site.categories['美洲'] %}
+		                                                    	<li><a href="shortcode_btn_general.html"><i class="fa fa-flask"></i>{{ post.machinename }}</a></li>
+															{% endfor %}
+		                                                    
+		                                                    <li><h3>大洋洲</h3></li>
+		                                                    {% for post in site.categories['大洋洲'] %}
+		                                                    	<li><a href="shortcode_btn_general.html"><i class="fa fa-flask"></i>{{ post.machinename }}</a></li>
+															{% endfor %}
+		                                                    
+		                                                    <li><h3>非洲</h3></li>
+		                                                    {% for post in site.categories['非洲'] %}
+		                                                    	<li><a href="shortcode_btn_general.html"><i class="fa fa-flask"></i>{{ post.machinename }}</a></li>
+															{% endfor %}
+		                                                </ul>    
+		                                            </div>
+		                                        </div>
+		                                    </div>    
+		                                </div>    
+		                            </li>
+		                        </ul>
+							</li>
+	                        <li><a href="/price.php">最新消息</a></li>
+	                        <li><a href="/flow.html">租借流程</a></li>
+	                        <li><a href="/qa.html">Ｑ＆Ａ</a></li>
+	                        <li><a href="/contact.html">聯絡我們</a></li>
+                        </ul>
+                    </div>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header v6 ===-->

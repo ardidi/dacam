@@ -1,0 +1,41 @@
+---
+layout: product
+title:  "Wi-Go法國 行動上網分享器租借"
+date:   2015-08-02 00:00:00
+permalink: /product/france.html
+categories: 歐洲
+machinename: "法國上網分享器"
+nickname: "法國"
+useCountry: "法國"
+price:     "299元"
+origPrice: "299元"
+serviceId: "8"
+datalimit: "流量無上限"
+datalimitExplain: "每日使用400MB後降速至2G速度吃到飽"
+fup: "為了維護網路連線品質及公平使用原則，世界各國的電信公司有時會針對短時間內使用極大網路流量的顧客進行流量管制，可能導致無法上網或上網速度變慢。建議不要觀看影音檔、網路電視、視訊、線上遊戲....等等，並關掉3C產品的自動更新功能與雲端硬碟傳送資料功能。萬一發生了此類限制情況，這段時間的使用費仍需由客戶自行負擔。"
+
+
+imageBig:  "/images/v2/country/france/france-big-2.jpg"
+imageMachine: "//cdn.wi-go.com.tw/images/v2/country/france/france-m.png"
+image: "//cdn.wi-go.com.tw/images/v2/country/france/france.jpg"
+countryFlag: "/images/v2/flags/flat/32/France.png"
+
+say: "無論是漫步在香榭麗舍大道，或是爬上凱旋門看巴黎最漂亮的市景，法國上網無限分享無限精彩。"
+
+references:
+    - text: "※1 使用時間會因環境與電波及上網人數不同而調整。本機型約可使用8小時，建議搭配行動電源使用。"
+    - text: "※2 公平使用政策：每日使用400MB之後電信商將降速至128kbps至當日23:59，無流量使用上限。為避免影響上網體驗，建議晚上關機充電，並關閉自動下載以及同步軟體。"
+    - text: "※3 歐洲電信網路架設不如台灣基地台綿密，在小城鎮或是室內仍有可能有收訊死角，訊號強弱仍看當地現場狀況為主。"
+
+slogan:
+    - title: "便宜革命！"
+      comment: "誰說便宜不能有好貨，每天只要299元，可5台裝置共用，朋友分享超級划算！"
+    - title: "收訊最好！"
+      comment: "法國最大Orange電信，收訊第一！"
+    - title: "無附加費！"
+      comment: "無流量限制，不會因為流量到達而斷線的困擾！(請參閱下方公平使用政策)"
+    - title: "絕對高速！"
+      comment: "本公司2015年出產網卡，法國高速上網不用煩惱！"
+    - title: "超多功能！"
+      comment: "內建USB充電裝置，緊急時可做為行動電源使用！"
+---

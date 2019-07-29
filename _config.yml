@@ -1,0 +1,16 @@
+# Site settings
+title: Wi-Go國際漫遊出租 | 世界60國行動上網分享器租借
+email: cs@wi-go.com.tw
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://cdn.wi-go.com.tw" # the base hostname & protocol for your site
+facebook_url: https://www.facebook.com/WiGoTW
+github_username:  jekyll
+keep_files: ["images", "assets", "assets-old", "quiz"]
+paginate: 5
+
+# Build settings
+markdown: kramdown

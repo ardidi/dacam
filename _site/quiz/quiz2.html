@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="zh"> <!--<![endif]-->
+
+  <head>
+    <title>Wi-Go國際漫遊出租 | 小遊戲</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="下一站，你要去哪裡？ 超神準夢幻旅行～來測試看看2016年最適合你的旅遊地點吧！">
+
+    <meta name="author" content="">
+    
+	<meta property="og:url"           content="http://wi-go.com.tw/game/" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Wi-Go與你的下一站，要去哪裡？" />
+	<meta property="og:description"   content="超神準夢幻旅行～來測試看看2016年最適合你的旅遊地點吧！" />
+	<meta property="og:image"         content="http://wi-go.com.tw/game/fb.png" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/css/headers/header-v6.css">
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/plugins/animate.css">
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">    
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
+
+    <!--[if lt IE 9]><link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/css/theme-colors/red.css" id="style_color">
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/css/theme-skins/dark.css" id="style_color">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/css/custom.css">
+	
+	<!-- CSS SKY Form-->
+
+	<link rel="stylesheet" href="//cdn.wi-go.com.tw/assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css">
+	<![endif]-->
+	
+	
+	<style>
+		.center {
+			text-align: center;
+			vertical-align: middle;
+			font-size:24px;
+		}
+		
+		.bg-image-vw {
+		    width: 100%;
+		    height: 590px;
+		    padding: 50px 0;
+		    position: relative;
+		    background-color: #000841;
+		    overflow: hidden;
+		}
+		
+		.answer{
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    background-position: center; 
+			background-color:#2d2d2d;
+			
+		}
+
+		.rotate{
+			position: relative;
+			z-index: 0;
+		    -webkit-animation:spin 18s linear infinite;
+		    -moz-animation:spin 18s linear infinite;
+		    animation:spin 18s linear infinite;
+		}
+		
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+	</style>
+	
+</head>
+
+<body class="header-fixed">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=711494435573668";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="wrapper">    
+    <!--=== Header v6 ===-->
+    <div class="header-v6 header-classic-white header-sticky">
+        <!-- Navbar -->
+        <div class="navbar mega-menu" role="navigation">
+            <div class="container container-space">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Navbar Brand -->
+                    <div class="navbar-brand">
+                        <a href="/">
+                            <img class="shrink-logo" src="//cdn.wi-go.com.tw/images/logo-t.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- ENd Navbar Brand -->
+
+                    <!-- Header Inner Right -->
+                    <div class="header-inner-right">
+                        <ul class="menu-icons-list">
+                            <li class="menu-icons shopping-cart">
+                            	
+                                <i class="menu-icons-style radius-x"><a href="//s.wi-go.com.tw/"><img class="menu-icons-style radius-x fa fa-shopping-cart" src="//cdn.wi-go.com.tw/images/btn-bandwidth.png"></a></i>
+                                <!--div class="shopping-cart-open">
+                                	<form action="//s.wi-go.com.tw/index.php" id="sky-form" class="sky-form" style="box-shadow: 0 0 0px rgba(0,0,0,0);">
+	                                    <span class="shc-title">預約E-mail：<input type="text" name="mail" placeholder="您訂單的Email"></span>
+	                                    <span class="shc-title">電話號碼：<input type="text" name="phone" placeholder="您訂單中留下之手機號碼"/></span>
+	                                    <button type="button" class="btn-u">登入</button>
+                                	</form>
+                                </div-->
+                            </li>
+                            <li class="menu-icons">
+                                <i class="menu-icons-style radius-x"><a href="/booking.php"><img class="menu-icons-style radius-x fa fa-shopping-cart" src="//cdn.wi-go.com.tw/images/btn-reserve.png"></a></i>
+                            </li>
+                        </ul>    
+                    </div>
+                    <!-- End Header Inner Right -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav">
+							<li class="dropdown mega-menu-fullwidth">
+	                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+	                            	搭配國家
+	                            </a>
+								<ul class="dropdown-menu">
+		                            <li>
+		                                <div class="mega-menu-content disable-icons">
+		                                    <div class="container">
+		                                        <div class="row equal-height">
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                
+		                                                    <li><h3>日韓</h3></li>
+		                                                    
+			                                                    <li><a href="/korea.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/South-Korea.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">韓國上網分享器</span></a></li>
+															
+			                                                    <li><a href="/japan.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/Japan.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">日本上網分享器</span></a></li>
+															
+		                                                    
+		                                                    <li><h3>亞洲</h3></li>
+			                                                    <li><a href="/thailand.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/Thailand.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">泰國上網分享器</span></a></li>
+			                                                    <li><a href="/china.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/China.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">泰國上網分享器</span></a></li>
+		                                                    
+		                                                </ul>                                
+		                                            </div>
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                    <li><h3>歐洲</h3></li>
+		                                                    
+			                                                    <li><a href="/europe.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/European-Union.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">歐洲周遊分享器</span></a></li>
+															
+			                                                    <li><a href="/france.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/France.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">法國上網分享器</span></a></li>
+															
+			                                                    <li><a href="/italy.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/Italy.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">義大利上網分享器</span></a></li>
+															
+			                                                    <li><a href="/german.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/Germany.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">德國上網分享器</span></a></li>
+															
+		                                                </ul>    
+		                                            </div>
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                    <li><h3>北美洲</h3></li>
+			                                                    <li><a href="/us.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/United-States.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">美國上網分享器</span></a></li>
+		                                                    
+		                                                    
+		                                                    <li><h3>大洋洲</h3></li>
+			                                                    <li><a href="/australia.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/Australia.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">澳洲上網分享器</span></a></li>
+			                                                    <li><a href="/australia.php"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('//cdn.wi-go.com.tw/images/v2/flags/flat/32/New-Zealand.png'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">紐西蘭上網分享器</span></a></li>
+		                                                    
+		                                                </ul>    
+		                                            </div>
+		                                        </div>
+		                                    </div>    
+		                                </div>    
+		                            </li>
+		                        </ul>
+							</li>
+	                        <li><a href="/price.php">機種價格</a></li>
+	                        <li><a href="/flow.php">租借流程</a></li>
+	                        <li><a href="/qa.php">Ｑ＆Ａ</a></li>
+	                        <li><a href="/booking.php">立即預約</a></li>
+                        </ul>
+                    </div>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header v6 ===-->
+	<div class="container content margin-bottom-20 visible-lg visible-md">
+</div>
+    <!-- Parallax Section -->
+    <div class="bg-image-vw parallaxBg">
+        <div class="container">
+            <div class="headline-center headline-light">
+                <h2 style="font-size:40px;">下一站，你要去哪裡？</h2>
+                <p style="font-size:28px;">超神準夢幻旅行～來測試看看2016年最適合你的旅遊地點吧！</p><br>
+                <span class="page-scroll"><a href="#game" class="btn-u btn-brd btn-brd-hover btn-u-light" style="z-index:100;">開始測驗</a></span>
+            </div><!--/end Headline Center-->
+            <img src="./world-m.png" class="img-responsive rotate bg-image-img"/>
+        </div>
+    </div>
+    <!-- End Parallax Section -->
+    
+    <section id="game">
+		
+		
+	    <!-- Parallax Section -->
+	    <div class="parallaxBg answer" id="answerframe">
+	        <div class="container">
+				<div class="container content margin-bottom-20"></div>
+				
+	            <div class="headline-center headline-light">
+	            	
+	                <div class="col-md-8 col-md-offset-2" style="background-color:rgba(0,0,0,0.5);">
+		                <p style="font-size:16px;">- 測驗結果 -</p>
+		                <p style="font-size:40px;" id="title">最適合你的旅遊地點會是...</p>
+	                </div>
+	                
+		            <div class="container content margin-bottom-10"></div>
+	                
+	                <div class="col-md-8 col-md-offset-2" style="background-color:rgba(0,0,0,0.5);">
+		                <div class="container content margin-bottom-10"></div>
+	                	<p style="font-size:18px;" id="description">地點說明</p><br>
+	                </div>
+	                
+	                <div class="col-md-8 col-md-offset-2" style="background-color:rgba(0,0,0,0.5);">
+		                <div class="fb-share-button" data-href="http://wi-go.com.tw/game/" data-layout="button_count"></div>
+		                <a class="btn-u btn-brd btn-brd-hover btn-u-light" style="z-index:100;" id="again">再來一次</a>
+		                <div class="container content margin-bottom-10"></div>
+	                </div>
+	            </div><!--/end Headline Center-->
+	        </div>
+	    </div>
+	    <!-- End Parallax Section -->
+		
+		<!--div class="container content" id="answerframe">
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="col-xs-12" style="font-size:26px;">
+						最適合你的旅遊地點會是...
+					</div>
+					<div class="col-xs-12" id="title" style="font-size:30px;">
+						城市
+					</div>
+					<div class="col-xs-12" id="description">
+						說明
+					</div>
+				</div>
+				<div class="col-xs-8">
+					<img src="" id="ansPic" class="img-responsive"/>
+				</div>
+			</div>
+		</div-->
+		<div class="container content" id="gameframe">
+		
+			<div class="container content margin-bottom-20 visible-lg visible-md">
+			</div>		
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-xs-4 quiz_answer center" style="background-color:#33afa5; color:#FFF;" id="a1">
+						問題1
+					</div>
+					<div class="col-xs-4 quiz_answer center" style="background-color:#d95b43; color:#FFF;" id="a2">
+						問題2
+					</div>
+					<div class="col-xs-4 quiz_answer center" style="background-color:#a71b4a; color:#FFF;" id="a3">
+						問題3
+					</div>
+					<div class="col-xs-4 quiz_answer center" style="background-color:#fc9d9a; color:#FFF;" id="a8">
+						問題8
+					</div>
+					<div class="col-xs-4 quiz_answer center" style="color:#222;" id="q">
+						Q1
+					</div>
+					<div class="col-xs-4 quiz_answer center" style="background-color:#492d61; color:#FFF;" id="a4">
+						問題4
+					</div>
+					<div class="col-xs-4 quiz_answer center" style="background-color:#fcebb6; color:#FFF;" id="a5">
+						問題5
+					</div>
+					<div class="col-xs-4 quiz_answer center" style="background-color:#207791; color:#FFF;" id="a6">
+						問題6
+					</div>
+					<div class="col-xs-4 quiz_answer center" style="background-color:#d1f2b8; color:#FFF;" id="a7">
+						問題7
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	  	  
+
+    <!--=== Copyright ===-->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">                     
+                    <p>
+                        2014 &copy; Wi-Go行動上網 版權所有. 
+                    </p>
+                </div>
+                <div class="col-md-6">  
+                    <a href="index.php">
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </div><!--/copyright--> 
+    <!--=== End Copyright ===-->
+	  </div>
+		<!-- JS Global Compulsory -->
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/jquery.easing.min.js"></script>
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/smoothScroll.js"></script>
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+
+<!-- JS Customization -->
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/js/custom.js"></script>
+
+<!-- JS Page Level -->
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/js/app.js"></script>
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/js/plugins/owl-carousel.js"></script>
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/js/plugins/style-switcher.js"></script>
+<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/js/plugins/cube-portfolio/cube-portfolio-3-ns.js"></script>
+
+
+<script type="text/javascript">
+
+	var result = "";
+	var quizId = 0;
+	var colors = ["33afa5","d95b43","a71b4a","fc9d9a","492d61","fcebb6","207791","d1f2b8"];
+	var question = ["只做一天最想做哪種工作？", "最喜歡以下哪種食物？", "外出旅行想住在怎樣的地方？", "夢想中的假期長怎樣？", "選擇一個動物？"];
+	var answer = [];
+	answer[0] = ["總統", "空中巴士總裁", "AV工作者", "空服員", "飯店管家", "餐廳神秘客", "旅遊作家", "駭客"];
+	answer[1] = ["Pizza", "甜點", "握壽司", "海鮮料理", "什麼都吃", "牛肉麵", "素食", "麥當勞"];
+	answer[2] = ["海邊的房子", "森林裡的小屋", "市區的公寓", "露宿街頭", "華麗的別墅", "陌生人的沙發", "高級飯店", "山區露營"];
+	answer[3] = ["跟情人漫步", "參觀美術館", "陽光沙灘海浪", "古蹟冒險", "任何異國情調皆可", "按摩按到爽", "睡覺睡到飽", "逛街購物買到手軟"];
+	answer[4] = ["草泥馬", "櫻花鉤吻鮭", "馬來貘", "團團圓圓", "金剛", "海綿寶寶", "喵星人", "小鹿斑比"];
+
+
+	var text = '{\r\n\t\"results\": [{\r\n\t\t\"image\": \"https:\/\/farm8.staticflickr.com\/7627\/16659841667_92ff4cd927_h.jpg\",\r\n\t\t\"text\": \"\u967D\u5149\uFF0C\u6C99\u7058\uFF0C\u65B0\u9BAE\u7684\u98DF\u7269\u548C\u4E00\u4E9B\u8001\u670B\u53CB\u7684\u7D44\u5408\u3002\u60F3\u8981\u7761\u5230\u81EA\u7136\u9192\u7684\u4F60\uFF0C\u53BB\u4E00\u8D9F\u5E0C\u81D8\u7684\u7F8E\u9E97\u5CF6\u5DBC\u6D77\u5CB8\u4F86\u500B\u590F\u65E5\u7F8E\u5922\uFF0C\u4F60\u6C38\u9060\u4E0D\u6703\u5F8C\u6094\u7684\",\r\n\t\t\"title\": \"\u5E0C\u81D8-\u514B\u91CC\u7279\u5CF6\"\r\n\t}, {\r\n\t\t\"image\": \"https:\/\/farm7.staticflickr.com\/6079\/6056503672_ff6e653265_b.jpg\",\r\n\t\t\"text\": \"\u6BCF\u4E00\u676F\u8336\u90FD\u662F\u7F8E\u5B78\u7684\u878D\u5408\u3001\u6BCF\u500B\u8857\u89D2\u5145\u6EFF\u8457\u6B77\u53F2\u7684\u7E2E\u5F71\uFF0C\u512A\u96C5\u7684\u82F1\u5F0F\u65E5\u5E38\uFF0C\u4F60\u7D55\u5C0D\u4E0D\u80FD\u932F\u904E\uFF01\u4F86\u502B\u6566\u8D70\u4E00\u906D\u5427\uFF01\",\r\n\t\t\"title\": \"\u82F1\u570B-\u502B\u6566\"\r\n\t}, {\r\n\t\t\"image\": \"https:\/\/farm7.staticflickr.com\/6117\/6327063862_66be13a8fb_b.jpg\",\r\n\t\t\"text\": \"\u4F60\u7406\u60F3\u4E2D\u7684\u5047\u671F\u5C31\u662F\u5FD8\u8A18\u65E5\u5E38\u7684\u7463\u4E8B\u3001\u597D\u597D\u5730\u5728\u57CE\u5E02\u4E2D\u4F86\u4E00\u5834\u653E\u9B06\u4E4B\u65C5! \u767D\u5929\u7684\u535A\u7269\u9928\uFF0C\u665A\u4E0A\u7684\u7D05\u71C8\u5340\uFF0C\u73FE\u4EE3\u8207\u53E4\u5178\uFF0C\u53BB\u4E00\u8D9F\u963F\u59C6\u65AF\u7279\u4E39\uFF0C\u76E1\u60C5\u7684\u89E3\u653E\u5167\u5FC3\u81EA\u7531\u7684\u5C0F\u5B87\u5B99\u5427\uFF01\",\r\n\t\t\"title\": \"\u8377\u862D-\u963F\u59C6\u65AF\u7279\u4E39\"\r\n\t}, {\r\n\t\t\"image\": \"http:\/\/i.imgur.com\/txWywgp.jpg\",\r\n\t\t\"text\": \"\u7121\u502B\u662F\u7562\u5361\u7D22\u7684\u760B\u72C2\u756B\u4F5C\u3001\u9AD8\u5730\u5947\u5E7B\u7684\u5EFA\u7BC9\u3001\u9084\u662F\u6C38\u9060\u5145\u6EFF\u9A5A\u559C\u7684\u897F\u73ED\u7259\u5C0F\u9152\u9928\uFF0C\u5DF4\u8CFD\u9686\u7D0D\u5145\u6EFF\u671D\u6C23\u7684\u9B45\u529B\uFF0C\u6700\u9069\u5408\u71B1\u60C5\u7684\u4F60\uFF01\",\r\n\t\t\"title\": \"\u897F\u73ED\u7259-\u5DF4\u8CFD\u9686\u7D0D\"\r\n\t}, {\r\n\t\t\"image\": \"https:\/\/farm9.staticflickr.com\/8500\/8266050441_a1e18938da_h.jpg\",\r\n\t\t\"text\": \"\u9003\u96E2\u57CE\u5E02\u7684\u55A7\u56C2\u3001\u73FE\u5728\u7684\u4F60\u9700\u8981\u66AB\u6642\u8B93\u5FC3\u9748\u6C89\u975C\u4E0B\u4F86\u7684\u5730\u65B9\u3002\u5145\u6EFF\u4E86\u56DB\u5B63\u7F8E\u611F\u7684\u6E05\u6C34\u5BFA\u3001\u5BCC\u542B\u548C\u98A8\u7F8E\u611F\u7684\u8857\u9053\u4EE5\u53CA\u4FDD\u7559\u50B3\u7D71\u6C11\u4FD7\u7684\u85DD\u821E\u5993\u6587\u5316\uFF0C\u53BB\u4E00\u8D9F\u65E5\u672C\u9AD4\u9A57\u4EAC\u90FD\u98A8\u60C5\u7684\u9B45\u529B\u5427\uFF01\",\r\n\t\t\"title\": \"\u65E5\u672C-\u4EAC\u90FD\"\r\n\t}, {\r\n\t\t\"image\": \"http:\/\/i.imgur.com\/kIUtpE3.jpg\",\r\n\t\t\"text\": \"\u559D\u9152\u6709\u7406\u3001\u72C2\u6B61\u7121\u7F6A\uFF0C\u559C\u6B61\u8207\u4EBA\u540C\u6A02\u7684\u4F60\uFF0C\u7368\u7279\u7684\u6176\u5178\u8207\u5609\u5E74\u83EF\u6703\u6700\u5438\u5F15\u4EBA\u4E86\u3002\u4E00\u908A\u66A2\u98F2\u5564\u9152\u7684\u7F8E\u5473\uFF0C\u4E00\u908A\u54C1\u5690\u6700\u9053\u5730\u7684\u5DF4\u4F10\u5229\u4E9E\u4F73\u991A\uFF0C\u611F\u53D7\u842C\u4EBA\u540C\u6176\u7684\u71B1\u9B27\u6C23\u6C1B\uFF0C\u7D55\u5C0D\u8D85\u503Cder\uFF01\",\r\n\t\t\"title\": \"\u5FB7\u570B-\u6155\u5C3C\u9ED1\"\r\n\t}, {\r\n\t\t\"image\": \"https:\/\/farm4.staticflickr.com\/3648\/3513827429_959c0c75ac_b.jpg\",\r\n\t\t\"text\": \"\u4F60\u9700\u8981\u6709\u500B\u8207\u773E\u4E0D\u540C\u76842016\u5E74\uFF0C\u5C31\u4EE5\u4E16\u754C\u4E0A\u7B2C\u4E00\u9053\u66D9\u5149\u505A\u958B\u982D\uFF0C\u96EA\u68A8\u6B4C\u5287\u9662\u70BA\u80CC\u666F\u5427! \u6700\u5F8C\u5728\u64C1\u62B1\u53EF\u611B\u7684\u7121\u5C3E\u718A\u8B93\u4F60\u76842016\u5E74\u66F4\u5B8C\u6574\u3002\",\r\n\t\t\"title\": \"\u6FB3\u6D32-\u96EA\u68A8\"\r\n\t},{\r\n\t\t\"image\": \"http:\/\/i.imgur.com\/OJw0aR4.jpg\",\r\n\t\t\"text\": \"\u4F60\u6C92\u6709\u516C\u4E3B\u75C5\u4E5F\u6C92\u6709\u738B\u5B50\u75C5\uFF0C\u4F60\u53EA\u662F\u559C\u611B\u770B\u5230\u9A5A\u559C\u7684\u90A3\u4E00\u523B\uFF01\u4F4D\u65BC\u82AC\u862D\u5317\u908A\u7F85\u51E1\u8076\u7C73\u7684\u300C\u8056\u8A95\u8001\u4EBA\u6751\u300D\uFF0C365\u5929\u5168\u5E74\u7121\u4F11\uFF0C\u8B93\u4F60\u6BCF\u5929\u90FD\u6709\u9A5A\u559C\u3002\",\r\n\t\t\"title\": \"\u82AC\u862D-\u7F85\u51E1\u8076\u7C73\"\r\n\t},{\r\n\t\t\"image\": \"http:\/\/i.imgur.com\/ZKv7HUz.jpg\",\r\n\t\t\"text\": \"\u4F60\u9069\u5408\u53BB\u5E36\u6709\u6FC3\u539A\u7570\u570B\u60C5\u8ABF\u7684\u570B\u5BB6\uFF0C\u4EAB\u53D7\u7DCA\u5F35\u3001\u523A\u6FC0\u3001\u591A\u91C7\u591A\u59FF\u7684\u5947\u5E7B\u65C5\u7A0B\u3002\u9019\u8D9F\u63A2\u96AA\u4E5F\u5C07\u6703\u662F\u4F60\u4EBA\u751F\u4E2D\u91CD\u8981\u7684\u4E00\u7BC7\u6545\u4E8B\u3002\",\r\n\t\t\"title\": \"\u58A8\u897F\u54E5-\u58A8\u897F\u54E5\u5E02\"\r\n\t},{\r\n\t\t\"image\": \"https:\/\/c2.staticflickr.com\/8\/7331\/13773493365_b211d64f85_h.jpg\",\r\n\t\t\"text\": \"\u50B3\u8AAA\u4E2D\u7684\u6D6A\u6F2B\u4E4B\u90FD\uFF0C\u662F\u6BCF\u5C0D\u60C5\u4EBA\u4E00\u751F\u5FC5\u53BB\u7684\u57CE\u5E02\u4E4B\u4E00\u3002\u4F46\u5176\u5BE6\u4E0D\u8AD6\u662F\u8DDF\u60C5\u4EBA\u6216\u662F\u4F60\u81EA\u5DF1\u4E00\u4EBA\uFF0C\u90FD\u80FD\u5728\u5DF4\u9ECE\u611F\u53D7\u5230\u4E0D\u4E00\u6A23\u7684\u6D6A\u6F2B\u6C1B\u570D\uFF0C\u8B93\u4F60\u4E0D\u7981\u5927\u558ABoujour~je t\'aime\u3002\",\r\n\t\t\"title\": \"\u6CD5\u570B-\u5DF4\u9ECE\"\r\n\t},{\r\n\t\t\"image\": \"https:\/\/farm7.staticflickr.com\/6008\/5932957728_3711bba085_o.jpg\",\r\n\t\t\"text\": \"\u4F60\u6700\u559C\u6B61\u5728\u9A5A\u5947\u5192\u96AA\u7684\u65C5\u7A0B\uFF0C\u4F86\u590F\u5A01\u5937\u8302\u5B9C\u5CF6\u5C31\u5C0D\u4E86\u3002\u4E0D\u8AD6\u662F\u706B\u5C71\u3001\u96E8\u6797\u9084\u662F\u7570\u570B\u98DF\u7269\uFF0C\u90FD\u80FD\u8B93\u4F60\u6BCF\u5929\u639B\u8457\u5927\u5FAE\u7B11\u4E26\u5145\u6EFF\u80FD\u91CF\u3002\",\r\n\t\t\"title\": \"\u590F\u5A01\u5937-\u8302\u5B9C\u5CF6\"\r\n\t},{\r\n\t\t\"image\": \"https:\/\/farm3.staticflickr.com\/2839\/11071077423_e25d0689d7_o.jpg\",\r\n\t\t\"text\": \"\u4F86\u5230\u5168\u7F8E\u6700\u6709\u9B45\u529B\u7684\u90FD\u5E02\uFF0C\u548C\u7166\u7684\u967D\u5149\u52A0\u4E0A\u7F8E\u9E97\u7684\u8857\u9053\uFF0C\u9019\u5EA7\u57CE\u5E02\u7684\u611F\u6027\u90FD\u80FD\u8B93\u4F60\u611F\u53D7\u5230\u4E0D\u4E00\u6A23\u7684\u7570\u570B\u6587\u5316\uFF0C\u653E\u9B06\u4F60\u7684\u8EAB\u5FC3\u9748\u3002\",\r\n\t\t\"title\": \"\u7F8E\u570B-\u820A\u91D1\u5C71\"\r\n\t},{\r\n\t\t\"image\": \"https:\/\/farm8.staticflickr.com\/7434\/9684203052_ef92b19385_h.jpg\",\r\n\t\t\"text\": \"\u4F60\u975E\u5E38\u9069\u5408\u8AC7\u4E00\u5834\u7570\u570B\u6200\u60C5! \u4E00\u8D77\u5728\u5674\u6CC9\u8A31\u9858\uFF0C\u4EA6\u6216\u662F\u4E00\u8D77\u5171\u4EAB\u4E00\u652F\u51B0\u6DC7\u6DCB\uFF0C\u8B93\u4F60\u76842016\u5E74\u8B5C\u51FA\u4E00\u6BB5\u7F85\u99AC\u5047\u671F\u3002\",\r\n\t\t\"title\": \"\u7FA9\u5927\u5229-\u7F85\u99AC\"\r\n\t},{\r\n\t\t\"image\": \"https:\/\/farm9.staticflickr.com\/8659\/16505529480_abda97d3eb_h.jpg\",\r\n\t\t\"text\": \"\u4F60\u61C9\u8A72\u5F88\u6703\u8DF3\u6C5F\u5357style\u3002\u8209\u51E1\u662F\u97D3\u570B\u7F8E\u98DF\u3001\u6232\u5287\u6216\u662F\u666F\u9EDE\uFF0C\u4F60\u4E00\u5B9A\u90FD\u5F88\u719F\u6089\uFF0C\u4E0D\u8AD6\u89AA\u81E8\u5E7E\u6B21\u90FD\u89BA\u5F97\u4E0D\u5920\u3002\",\r\n\t\t\"title\": \"\u97D3\u570B-\u9996\u723E\"\r\n\t},{\r\n\t\t\"image\": \"https:\/\/farm6.staticflickr.com\/5591\/14915235219_4c7ae28e60_k.jpg\",\r\n\t\t\"text\": \"\u4E0D\u7528\u591A\u8AAA\uFF0C\u8CB7\u6771\u897F\u5403\u6771\u897F\u662F\u6700\u9069\u5408\u4F60\u7684\u65C5\u7A0B\uFF0C\u4E5F\u662F\u6700\u8B93\u4F60\u653E\u9B06\u7684\u65C5\u884C\u65B9\u5F0F\u3002\u60F3\u8981\u540C\u6642\u4EAB\u53D7\u7F8E\u98DF\u8DDF\u653E\u9B06\u6309\u6469\uFF0C\u90A3\u5C31\u975E\u66FC\u8C37\u83AB\u5C6C\u4E86\u3002\",\r\n\t\t\"title\": \"\u6CF0\u570B-\u66FC\u8C37\"\r\n\t},{\r\n\t\t\"image\": \"https:\/\/farm8.staticflickr.com\/7285\/16240496098_c7595109c6_h.jpg\",\r\n\t\t\"text\": \"\u4F60\u559C\u6B61\u6642\u5C1A\uFF0C\u4E5F\u662F\u500B\u8D70\u5728\u6D41\u884C\u524D\u7AEF\u7684\u65C5\u4EBA\u3002\u6C92\u6709\u898F\u5247\u5C0D\u4F60\u4F86\u8AAA\u66F4\u80FD\u96A8\u5FC3\u6240\u6B32\uFF0C\u5982\u540C\u7C73\u862D\u7684\u57CE\u5E02\u6C1B\u570D\uFF0C\u7528\u81EA\u5DF1\u7684\u8173\u6B65\u53BB\u4EAB\u53D7\u6BCF\u4E00\u500B\u7D30\u7BC0\u3002\",\r\n\t\t\"title\": \"\u7FA9\u5927\u5229-\u7C73\u862D\"\r\n\t},{\r\n\t\t\"image\": \"https:\/\/farm6.staticflickr.com\/5479\/9997862744_c050066a2a_h.jpg\",\r\n\t\t\"text\": \"\u4F60\u559C\u6B61\u63A2\u7D22\u6236\u5916\u6D3B\u52D5\uFF0C\u66F4\u559C\u6B61\u5BD2\u51B7\u7684\u5929\u6C23\u3002\u53EA\u8981\u6709\u5192\u96AA\u7684\u6A5F\u6703\uFF0C\u4F60\u4E00\u5B9A\u6703\u5617\u8A66\uFF0C\u4E0D\u8AD6\u662F\u706B\u5C71\u3001\u51B0\u6CB3\u9084\u662F\u6EAB\u6CC9\u90FD\u80FD\u8B93\u4F60\u7684\u65C5\u7A0B\u6EFF\u8F09\u800C\u6B78\u3002\",\r\n\t\t\"title\": \"\u51B0\u5CF6-\u96F7\u514B\u96C5\u7DAD\u514B\"\r\n\t}]\r\n}';
+	var obj = JSON.parse(text);
+	
+
+	
+//	alert(obj.results[0].image);
+	
+    jQuery(document).ready(function() {
+    	
+    	$('.page-scroll a').bind('click', function(event) {
+			var $anchor = $(this);
+			$('html, body').animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1500, 'easeInOutExpo');
+			event.preventDefault();
+		});
+    	
+	 	$(".bg-image-vw").height($(window).height()-154);
+	    window.addEventListener('resize', function(event) {
+   		 	$(".bg-image-vw").height($(window).height()-154);
+   	    });
+
+    	
+	 	$("#answerframe").height($(window).height());
+	    window.addEventListener('resize', function(event) {
+   		 	$("#answerframe").height($(window).height());
+   	    });
+   	    
+    	$("#again").click(function() {
+	    	startQuiz();
+			nextQuiz();
+		});
+		
+        App.init();
+        //alert("XD");
+        squareThis(".quiz_answer",1);
+        squareThis("#gameframe",0);
+                
+	    setClick("#a1");
+	    setClick("#a2");
+	    setClick("#a3");
+	    setClick("#a4");
+	    setClick("#a5");
+	    setClick("#a6");
+	    setClick("#a7");
+	    setClick("#a8");
+	    
+	    startQuiz();
+        nextQuiz();
+    });
+
+
+	function startQuiz(){
+		quizId = 0;
+	    $("#answerframe").hide();
+	    $("#gameframe").show();
+
+	}
+
+	function nextQuiz(){
+        
+        if(quizId>=1)//結束這個回合
+	    	showAnswer();
+        	
+        updateQuiz(question[quizId],answer[quizId]);
+		quizId+=1;
+	}
+	
+	function showAnswer(){
+		shuffle(obj.results);
+		
+	    $("#gameframe").hide();
+		
+	    $("#title").html(obj.results[0].title);
+	    $("#ansPic").attr("src",obj.results[0].image);
+	    $("#description").html(obj.results[0].text);
+	    
+	    $("#answerframe").css("background-image","url('"+obj.results[0].image+"')");
+	    
+	    $("#answerframe").show();
+		
+	}
+    
+    function updateQuiz(question,arr){
+    
+		shuffle(colors);
+		shuffle(arr);
+		
+	    $("#q").hide();
+	    $("#a1").hide();
+	    $("#a2").hide();
+	    $("#a3").hide();
+	    $("#a4").hide();
+	    $("#a5").hide();
+	    $("#a6").hide();
+	    $("#a7").hide();
+	    $("#a8").hide();
+	    
+		$("#a1").css("background-color", "#"+colors[0]);
+		$("#a2").css("background-color", "#"+colors[1]);
+		$("#a3").css("background-color", "#"+colors[2]);
+		$("#a4").css("background-color", "#"+colors[3]);
+		$("#a5").css("background-color", "#"+colors[4]);
+		$("#a6").css("background-color", "#"+colors[5]);
+		$("#a7").css("background-color", "#"+colors[6]);
+		$("#a8").css("background-color", "#"+colors[7]);
+		
+	    $("#q").html(question);
+	    $("#a1").html(arr[0]);
+	    $("#a2").html(arr[1]);
+	    $("#a3").html(arr[2]);
+	    $("#a4").html(arr[3]);
+	    $("#a5").html(arr[4]);
+	    $("#a6").html(arr[5]);
+	    $("#a7").html(arr[6]);
+	    $("#a8").html(arr[7]);
+	    
+	    $("#a1").html(arr[0]);
+	    $("#a2").html(arr[1]);
+	    $("#a3").html(arr[2]);
+	    $("#a4").html(arr[3]);
+	    $("#a5").html(arr[4]);
+	    $("#a6").html(arr[5]);
+	    $("#a7").html(arr[6]);
+	    $("#a8").html(arr[7]);
+	    
+	    $('#q, #a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8').each(function(fadeInDiv) {
+	    	$(this).delay(fadeInDiv * 200).fadeIn(500);
+	    });
+	    
+    }
+    
+    function setClick(element){
+	    $(element).click(function() {
+	    	result=result+$(element).html();
+	    	nextQuiz();
+		});
+	    
+    }
+    
+	function shuffle(o){
+	    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	    return o;
+	}
+	
+	function squareThis (element, center, ratio, minLimit){
+	    // First of all, let's square the element
+	    square(center, ratio, minLimit);
+	
+	    // Now we'll add an event listener so it happens automatically
+	    window.addEventListener('resize', function(event) {
+	        square(center, ratio, minLimit);
+	    });
+	    
+	    // This is just an inner function to help us keep DRY
+	    function square(center, ratio, minLimit)
+	    {
+	        if(typeof(ratio) === "undefined")
+	        {
+	            ratio = 1;
+	        }
+	        if(typeof(minLimit) === "undefined")
+	        {
+	            minLimit = 0;
+	        }
+	        if(typeof(center) === "undefined")
+	        {
+	            center = 0;
+	        }
+	        var viewportWidth = window.innerWidth;
+	        
+	        if(viewportWidth >= minLimit)
+	        {
+	            var newElementHeight = $(element).width() * ratio;
+	            $(element).height(newElementHeight);
+	            
+	            if( center==1 ){
+		        	$(element).css("padding-top", ((newElementHeight-30)/2)+"px");
+	            $(element).height(newElementHeight-((newElementHeight-30)/2));
+	            }
+				
+	        }
+	        else
+	        {
+	            $(element).height('auto');
+	        }
+	    }
+	}
+    
+</script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/respond.js"></script>
+	<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/html5shiv.js"></script>
+	<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/placeholder-IE-fixes.js"></script>
+	<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+	<script type="text/javascript" src="//cdn.wi-go.com.tw/assets/js/jquery.placeholder.min.js"></script>
+<![endif]-->		
+
+
+
+  </body>
+
+</html>

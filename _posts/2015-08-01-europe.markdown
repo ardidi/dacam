@@ -1,0 +1,189 @@
+---
+layout: product
+title:  "Wi-Go歐洲周遊 行動上網分享器租借"
+date:   2015-08-01 00:00:00
+permalink: /product/europe.html
+categories: ['歐洲','熱門']
+machinename: "歐洲周遊分享器"
+nickname: "歐洲周遊"
+price:     "349元"
+origPrice: "349元"
+serviceId: "4"
+imageBig:  "//cdn.wi-go.com.tw/images/v2/country/europe/europe-big.jpg"
+imageMachine: "//cdn.wi-go.com.tw/images/v2/country/europe/europe-m.png"
+image: "//cdn.wi-go.com.tw/images/v2/country/europe/europe.jpg"
+countryFlag: "/images/v2/flags/flat/32/European-Union.png"
+say: "不管是在古羅馬競技場，還是風情萬種的威尼斯，義大利上網無限分享無限精彩。"
+
+references:
+    - text: "※1 使用時間會因環境與電波及上網人數不同而調整。實際使用時間約4小時，建議搭配行動電源使用。"
+    - text: "※2 公平使用政策：德國分享器每位使用者無數據使用上限，保證高速上網使用量為400MB/日，若您超過此使用量，則有可能遭到限速56kbps，本公司對此情形無法退費。"
+    - text: "※3 歐洲電信網路架設不如台灣基地台綿密，在小城鎮或是室內仍有可能有收訊死角，訊號強弱仍看當地現場狀況為主。"
+
+slogan:
+    - title: "便宜革命！"
+      comment: "誰說便宜不能有好貨，每天最低319元，10人分享每人不到一瓶飲料就能自由打卡！"
+    - title: "超大電量！"
+      comment: "可連續使用8小時，讓你從早玩到晚。"
+    - title: "周遊歐洲！"
+      comment: "你還在一個國家一個國家的買SIM卡嗎？漫遊歐洲49國家只要一台機器。"
+    - title: "絕對高速！"
+      comment: "2015年最新網卡，通吃歐洲各國頻段！"
+    - title: "輕量流暢！"
+      comment: "重量僅140克，15秒快速啟動！"
+    - title: "無附加費！"
+      comment: "租借期間每日可使用400MB，總流量超過即斷線，無附加費用。"
+---
+
+
+---
+layout: product
+title:  "Wi-Go歐洲周遊 行動上網分享器租借"
+date:   2015-08-22 14:20:07
+permalink: europe.html
+categories: 歐洲
+---
+
+    <!--=== Content Part ===-->
+    <div class="container">		
+    	<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 magazine-page">
+                
+                <!--Basic Table Option (Spacing)-->
+                <div class="panel panel-red margin-bottom-40">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">可使用國家及地區</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td style="font-size:18px;">
+	                                    英國、法國、義大利、德國、葡萄牙、西班牙、瑞典、瑞士<font color="#ff0000">*(大歐洲)</font>、荷蘭、土耳其<font color="#ff0000">*(大歐洲)</font>、冰島、希臘、愛爾蘭、芬蘭、挪威、波蘭、比利時、奧地利、匈牙利、摩納哥、丹麥、梵蒂岡、阿爾巴尼亞<font color="#ff0000">*(大歐洲)</font>、安道爾<font color="#ff0000">*(大歐洲)</font>、亞速群島、保加利亞、加那利群島、克羅埃西亞、塞浦路斯、捷克、愛沙尼亞、法羅群島、法屬圭亞那、直布羅陀、瓜德羅普、根西島、馬恩島、澤西島、拉脫維亞、列支敦斯登、立陶宛、盧森堡、馬德拉島、馬爾他共和國、馬提尼克島、留尼汪島、羅馬尼亞、斯洛伐克、斯洛維尼亞
+	                                    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:18px;">
+	                                    <font color="#ff0000">*</font> 小歐洲上網(共45國家)：瑞士、土耳其、阿爾巴尼亞、安道爾4國將無法提供上網服務。Line APP語音通話或圖片檔案傳輸可正常使用<br/>
+	                                    ** 大歐洲上網(共49國家)：可使用國家較多，目前無法使用Line APP的語音通話或是圖片及檔案傳輸。
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                      
+                </div>
+                <!--End Basic Table-->
+            </div>
+
+    	
+    	
+            <!-- Left Sidebar -->
+        	<div class="col-md-4 md-margin-bottom-60">
+                <!--Blog Post-->        
+                    <div class="blog-img">
+                        <img class="img-responsive" src="//cdn.wi-go.com.tw/images/wgeu.png" alt="">
+                    </div>
+                <!--End Blog Post-->        
+
+            </div>
+            <!-- End Left Sidebar -->
+
+            <!-- Right Sidebar -->
+            <div class="col-md-8">
+                <table style="width:100%">
+				<tr>
+				<th style="width:150px; font-size:30px; color:#ff0000;">便宜革命！</th>
+				<td style="font-size:16px;">誰說便宜不能有好貨，每天最低319元，10人分享每人不到一瓶飲料就能自由打卡！</td>
+				</tr>
+				<!--tr>
+				<th style="width:150px; font-size:30px; color:#ff0000;">超大電量！</th>
+				<td style="font-size:16px;">可連續使用5小時，讓你從早玩到晚。在本站租賃可免費借用行動電源，即使機場過夜、24小時出門也照樣電力滿滿</td>
+				</tr-->
+				<tr>
+				<th style="width:150px; font-size:30px; color:#ff0000;">周遊歐洲！</th>
+				<td style="font-size:16px;">你還在一個國家一個國家的買SIM卡嗎？漫遊歐洲49國家只要一台機器。</td>
+				</tr>
+				<tr>
+				<th style="width:150px; font-size:30px; color:#ff0000;">絕對高速！</th>
+				<td style="font-size:16px;">本公司使用最新LTE網卡，通吃歐洲各國頻段！</td>
+				</tr>
+				<tr>
+				<th style="width:150px; font-size:30px; color:#ff0000;">輕量流暢！</th>
+				<td style="font-size:16px;">重量僅140克，15秒快速啟動！</td>
+				</tr>
+				<tr>
+				<th style="width:150px; font-size:30px; color:#ff0000;">無附加費！</th>
+				<td style="font-size:16px;">租借期間每日可使用400MB，總流量超過即斷線，無附加費用。</td>
+				</tr>
+				</table>
+            </div>
+            <!-- End Right Sidebar -->
+        </div><!--/row-->        
+    </div><!--/container-->		
+    <!--=== End Content Part ===-->
+    <a id="price" />
+    <!--=== Content Part ===-->
+    <div class="container content">		
+        <div class="row no-space-pricing pricing-mega-v3">
+            <div class="col-md-6 col-sm-6 block">
+                <div class="pricing">
+                    <div class="pricing-head">
+                        <h3>
+                            租期31日以上 <span>特價中</span>
+                        </h3>
+                        <h4 class="price" style="color:#000000">
+                            <i></i>319<i>元/日</i><br/>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 block">
+                <div class="pricing">
+                    <div class="pricing-head">
+                        <h3>
+                            租期5至30日 <span>特價中</span>
+                        </h3>
+                        <h4 class="price" style="color:#000000">
+                            <i></i>349<i>元/日</i><br/>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-space-pricing pricing-mega-v3">
+            <div class="col-md-12 col-sm-12 block">
+                <div class="pricing">
+                    <div class="pricing-head">
+                        <h3>
+                            說明
+                        </h3>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li style="font-size:16px;">
+							※1 使用時間會因環境與電波及上網人數不同而調整，非固定值。
+                        </li>
+                        <li style="font-size:16px;">
+							※2 公平使用政策：為維護網路連線品質及公平使用原則，本公司每月皆有可用流量總額限制，以免影響其他使用者使用之權益，租借者可使用租賃天數乘上400MB的流量，(如:租借10天可使用4GB，可在旅程中自由使用，總流量超過後將自動斷線無法使用)，旅程中若需額外加購流量將以每100MB收費150元，若需要額外流量請與本公司人員聯絡，我們將儘速為您服務。
+                        </li>
+                        <li style="font-size:16px;">
+							※3 歐洲電信網路架設不如台灣基地台綿密，在小城鎮或是室內仍有可能有收訊死角，訊號強弱仍看當地現場狀況為主。由於各國合作電信廠商皆不同，本公司無法保證各個鄉鎮等旅遊地點皆可正常連線，若您對訊號強度有所堅持，建議您直接至當地電信商購買上網服務即可。
+                        </li>
+                        <li style="font-size:16px;">
+							※4 為避免超量造成網路服務中斷，建議在出國前先將Dropbox、iCloud、APP自動更新等程式關閉，也應避免觀看網路電視、Youtube等大量數據之服務。短時間內過大流量可能造成電信公司主動斷線或限速，本公司將無法對此情形退費。
+                        </li>
+                        <li style="font-size:16px;">
+							※5 若您於非服務區（如：台灣、中東或遊輪上）開機使用造成停機，需與本公司聯絡後重新開通您的機器，產生之相關漫遊費用將由押金扣除。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+		    <div class="col-md-12 col-centered">
+				<a href="booking.php?country=eu"><img src="//cdn.wi-go.com.tw/images/reserve.png" height="50" class=" center-block"/></a>
+		    </div>
+		</div>
+        <!--  End Pricing Mega v3 -->
+	</div><!--/container-->		
+    

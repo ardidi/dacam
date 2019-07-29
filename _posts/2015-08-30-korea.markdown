@@ -1,0 +1,40 @@
+---
+layout: product
+title:  "Wi-Go韓國 行動上網分享器租借"
+date:   2015-08-22 14:20:07
+permalink: /product/korea.html
+categories: ['日韓','熱門']
+machinename: "韓國上網分享器"
+nickname: "韓國"
+useCountry: "韓國"
+price:     "199元"
+origPrice: "199元"
+serviceId: "21"
+datalimit: "流量無上限"
+datalimitExplain: "請參照本頁下方說明"
+imageBig:  "/images/v2/country/korea/korea-big.jpg"
+imageMachine: "/images/v2/country/korea/korea-m.png"
+image: "/images/v2/country/korea/korea.jpg"
+countryFlag: "/images/v2/flags/flat/32/South-Korea.png"
+say: "打卡、照片上傳、使用Line或Facebook聊天、網路電話，全部無限流量，韓國上網吃到飽，只要199元起。"
+
+references:
+    - text: "※1 使用時間會因環境與電波及上網人數不同而調整。使用時間約可使用6~9小時，建議搭配行動電源使用。"
+    - text: "※2 訊號強弱仍看當地現場狀況為主。"
+
+slogan:
+    - title: "便宜革命！"
+      comment: "誰說便宜不能有好貨，每天只要199元，可4人共用，朋友分享超級划算！"
+    - title: "收訊最好！"
+      comment: "本公司與韓國最大電信公司KT(韓國通訊)簽約合作，收訊絕對第一！"
+    - title: "無附加費！"
+      comment: "無費用超收問題，不加收才是真正的便宜革命！"
+    - title: "超棒產品！"
+      comment: "2015年最新網卡，韓國高速上網找WiGo！"
+    - title: "範圍最廣！"
+      comment: "使用WIMAX+LTE混合自動跳頻，雙重網路收訊涵蓋全韓國！"
+    - title: "輕量流暢！"
+      comment: "重量僅140克，15秒快速啟動！"
+    - title: ""
+      comment: "<img class=\"img-responsive\" src=\"/images/v2/country/korea/coverage.jpg\" />"
+---

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="zh"> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body class="header-fixed">
+	  <div class="wrapper">
+	  	  {% include header.html %}
+	  	  {{ content }}        
+	  	  {% include footer.html %}
+	  </div>
+		{% include foot.html %}
+		
+		<!-- JS GMap -->
+		<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="{{ "assets/plugins/gmap/gmap.js" | prepend: site.baseurl }}"></script>
+		
+		<script type="text/javascript">
+			var map;
+			$(document).ready(function(){
+				map = new GMaps({
+					div: '#map',
+					lat: 25.042852,
+					lng: 121.549792,
+					zoom: 16
+				});
+				
+				var marker = map.addMarker({
+					lat: 25.041252,
+					lng: 121.549792,
+					title: 'WiGo行動上網-106台北市大安區忠孝東路四段148號9樓之2',
+				});
+				
+				var infowindow = new google.maps.InfoWindow({
+					content: '<h1 style="color:black;">WiGo行動上網</h1><h2>106台北市大安區忠孝東路四段148號9樓之2</h2><span>捷運忠孝敦化站5號出口正上方</span>'
+				});
+				google.maps.event.addListener(marker, 'click', function() {
+				   infowindow.open(map,marker);
+				});
+				infowindow.open(map,marker);
+				
+			});
+		    
+		</script>
+		
+
+  </body>
+
+</html>
